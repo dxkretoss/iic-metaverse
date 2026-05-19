@@ -5405,6 +5405,10 @@ figure {
     max-width: 580px;
 }
 
+.section-title-single.homepage {
+    margin-bottom: 50px;
+}
+
 .testimonial-top-left-card {
     grid-row-gap: 5px;
     flex-flow: column;
