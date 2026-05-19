@@ -4412,22 +4412,22 @@ figure {
 
 .cta-top-left-element {
     position: absolute;
-    inset: -1px auto auto 0;
+    inset: 0 auto auto 0;
 }
 
 .cta-top-right-element {
     position: absolute;
-    inset: -1px -1px auto auto;
+    inset: 0 0 auto auto;
 }
 
 .cta-bottom-left-element {
     position: absolute;
-    inset: auto auto -1px -1px;
+    inset: auto auto 0 0;
 }
 
 .cta-bottom-right-element {
     position: absolute;
-    inset: auto -1px -1px auto;
+    inset: auto 0 0 auto;
 }
 
 .cta-typography {
@@ -5640,12 +5640,24 @@ figure {
     overflow: hidden;
 }
 
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 .ticker {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
     min-height: 100%;
     display: flex;
+    overflow: hidden;
+    width: 100%;
 }
 
 .inner-ticker-wrapper {
@@ -5657,6 +5669,8 @@ figure {
     max-height: 100%;
     display: flex;
     gap: 20px;
+    animation: marquee-scroll 25s linear infinite;
+    will-change: transform;
 }
 
 .single-sponsor-img {
