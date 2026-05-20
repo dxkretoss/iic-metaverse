@@ -3568,11 +3568,17 @@ figure {
 }
 
 .inner-box-one {
-    background: linear-gradient(180deg, #05040B 0%, #002800 100%);
+    /* background: linear-gradient(180deg, #05040B 0%, #002800 100%); */
+    background-image: url(/assests/images/footerbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .inner-box-two {
-    background: linear-gradient(180deg, #05040B 0%, #280000 100%);
+     background-image: url(/assests/images/footerbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(180deg, #05040B 0%, #280000 100%); */
 }
 
 .coin-box-price-text-green {
