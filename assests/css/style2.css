@@ -1092,6 +1092,8 @@ body {
     margin-top: 40px;
     margin-right: 12px;
     margin-left: 40px;
+
+    object-fit: cover;
 }
 
 .slider-content {

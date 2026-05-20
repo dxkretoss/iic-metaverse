@@ -3633,7 +3633,7 @@ figure {
 
 .primary-button-hover-text {
     position: absolute;
-    margin-left: -30px;
+    /* margin-left: -30px; */
 }
 
 .line {
@@ -9633,9 +9633,9 @@ figure {
     -webkit-background-clip: text;
     background-clip: text;
     margin-bottom: 30px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 500;
-    line-height: 90px;
+    line-height: 69px;
     display: inline-block;
 }
 
@@ -12348,6 +12348,23 @@ figure {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-owner-section {
+        flex-direction: column;
+    }
+
+     .secont-bio{
+        text-align: left;
+    }
+
+    .about-owner-section.second  {
+        flex-direction: column-reverse;
+    }
+        .about-owner-section img {
+        max-height: 300px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     h1 {
         letter-spacing: -2px;
@@ -12415,9 +12432,7 @@ figure {
         /* padding-bottom: 80px; */
     }
 
-    .about-owner-section {
-        flex-direction: column;
-    }
+    
 
     .section.features-hv2 {
         padding-top: 80px;
@@ -14021,6 +14036,10 @@ figure {
         margin-bottom: 16px;
         font-size: 32px;
         line-height: 42px;
+    }
+
+    .secont-bio{
+        text-align: left;
     }
 
     .single-history-wrap {
