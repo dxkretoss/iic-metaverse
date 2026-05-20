@@ -320,8 +320,8 @@
         default: a
       },
         d = n(97933),
-        s = e => e.Webflow.require("lottie").lottie,
-        c = e => !!(e.Webflow.env("design") || e.Webflow.env("preview")),
+        s = e => e.metaverse.require("lottie").lottie,
+        c = e => !!(e.metaverse.env("design") || e.metaverse.env("preview")),
         l = {
           Playing: "playing",
           Stopped: "stopped"
@@ -1247,7 +1247,7 @@
       "use strict";
       var a, i, r, o, d, s, c, l, u, f, E, p, T, m, g, y, I, _, O, b, R = window.$,
         A = n(95487) && R.tram;
-      (a = {}).VERSION = "1.6.0-Webflow", i = {}, r = Array.prototype, o = Object.prototype, d = Function.prototype, r.push, s = r.slice, r.concat, o.toString, c = o.hasOwnProperty, l = r.forEach, u = r.map, r.reduce, r.reduceRight, f = r.filter, r.every, E = r.some, p = r.indexOf, r.lastIndexOf, T = Object.keys, d.bind, m = a.each = a.forEach = function (e, t, n) {
+      (a = {}).VERSION = "1.6.0-metaverse", i = {}, r = Array.prototype, o = Object.prototype, d = Function.prototype, r.push, s = r.slice, r.concat, o.toString, c = o.hasOwnProperty, l = r.forEach, u = r.map, r.reduce, r.reduceRight, f = r.filter, r.every, E = r.some, p = r.indexOf, r.lastIndexOf, T = Object.keys, d.bind, m = a.each = a.forEach = function (e, t, n) {
         if (null == e) return e;
         if (l && e.forEach === l) e.forEach(t, n);
         else if (e.length === +e.length) {
@@ -1380,7 +1380,7 @@
         }
 
         function u() {
-          var e = o.children(".w-webflow-badge"),
+          var e = o.children(".w-metaverse-badge"),
             n = e.length && e.get(0) === t,
             i = a.env("editor");
           if (n) {
@@ -1392,10 +1392,10 @@
         return n.ready = function () {
           var n, a, o, f = r.attr("data-wf-status"),
             E = r.attr("data-wf-domain") || "";
-          /\.webflow\.io$/i.test(E) && d.hostname !== E && (f = !0), f && !s && (t = t || (n = e('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"), a = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg").attr("alt", "").css({
+          /\.metaverse\.io$/i.test(E) && d.hostname !== E && (f = !0), f && !s && (t = t || (n = e('<a class="w-metaverse-badge"></a>').attr("href", "https://metaverse.com?utm_campaign=brandjs"), a = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/metaverse-badge-icon-d2.89e12c322e.svg").attr("alt", "").css({
             marginRight: "4px",
             width: "26px"
-          }), o = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg").attr("alt", "Made in Webflow"), n.append(a, o), n[0]), u(), setTimeout(u, 500), e(i).off(c, l).on(c, l))
+          }), o = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/metaverse-badge-text-d2.c82cec3b78.svg").attr("alt", "Made in metaverse"), n.append(a, o), n[0]), u(), setTimeout(u, 500), e(i).off(c, l).on(c, l))
         }, n
       })
     },
@@ -1418,10 +1418,10 @@
           s = "hashchange",
           c = n.load || function () {
             var t, n, a;
-            i = !0, window.WebflowEditor = !0, r.off(s, u), t = function (t) {
+            i = !0, window.metaverseEditor = !0, r.off(s, u), t = function (t) {
               var n;
               e.ajax({
-                url: E("https://editor-api.webflow.com/api/editor/view"),
+                url: E("https://editor-api.metaverse.com/api/editor/view"),
                 data: {
                   siteId: o.attr("data-wf-site")
                 },
@@ -1433,8 +1433,8 @@
                 success: (n = t, function (t) {
                   var a, i, r;
                   if (!t) return void console.error("Could not load editor data");
-                  t.thirdPartyCookiesSupported = n, i = (a = t.scriptPath).indexOf("//") >= 0 ? a : E("https://editor-api.webflow.com" + a), r = function () {
-                    window.WebflowEditor(t)
+                  t.thirdPartyCookiesSupported = n, i = (a = t.scriptPath).indexOf("//") >= 0 ? a : E("https://editor-api.metaverse.com" + a), r = function () {
+                    window.metaverseEditor(t)
                   }, e.ajax({
                     type: "GET",
                     url: i,
@@ -1443,7 +1443,7 @@
                   }).then(r, f)
                 })
               })
-            }, (n = window.document.createElement("iframe")).src = "https://webflow.com/site/third-party-cookie-check.html", n.style.display = "none", n.sandbox = "allow-scripts allow-same-origin", a = function (e) {
+            }, (n = window.document.createElement("iframe")).src = "https://metaverse.com/site/third-party-cookie-check.html", n.style.display = "none", n.sandbox = "allow-scripts allow-same-origin", a = function (e) {
               "WF_third_party_cookies_unsupported" === e.data ? (p(n, a), t(!1)) : "WF_third_party_cookies_supported" === e.data && (p(n, a), t(!0))
             }, n.onerror = function () {
               p(n, a), t(!1)
@@ -1451,7 +1451,7 @@
           },
           l = !1;
         try {
-          l = localStorage && localStorage.getItem && localStorage.getItem("WebflowEditor")
+          l = localStorage && localStorage.getItem && localStorage.getItem("metaverseEditor")
         } catch (e) { }
 
         function u() {
@@ -1643,7 +1643,7 @@
       var a, i, r = {},
         o = {},
         d = [],
-        s = window.Webflow || [],
+        s = window.metaverse || [],
         c = window.jQuery,
         l = c(window),
         u = c(document),
@@ -1681,7 +1681,7 @@
       }, r.env = function (e) {
         var t = window.__wf_design,
           n = void 0 !== t;
-        return e ? "design" === e ? n && t : "preview" === e ? n && !t : "slug" === e ? n && window.__wf_slug : "editor" === e ? window.WebflowEditor : "test" === e ? window.__wf_test : "frame" === e ? window !== window.top : void 0 : n
+        return e ? "design" === e ? n && t : "preview" === e ? n && !t : "slug" === e ? n && window.__wf_slug : "editor" === e ? window.metaverseEditor : "test" === e ? window.__wf_test : "frame" === e ? window !== window.top : void 0 : n
       };
       var I = navigator.userAgent.toLowerCase(),
         _ = r.env.touch = "ontouchstart" in window || window.DocumentTouch && document instanceof window.DocumentTouch,
@@ -1694,8 +1694,8 @@
       } : function () {
         return !0
       };
-      var R = "resize.webflow orientationchange.webflow load.webflow",
-        A = "scroll.webflow " + R;
+      var R = "resize.metaverse orientationchange.metaverse load.metaverse",
+        A = "scroll.metaverse " + R;
 
       function h(e, t) {
         var n = [],
@@ -1732,7 +1732,7 @@
         i.then(e)
       }, r.destroy = function (e) {
         e = e || {}, m = !0, l.triggerHandler("__wf_destroy"), null != e.domready && (T = e.domready), E.each(o, y), r.resize.off(), r.scroll.off(), r.redraw.off(), d = [], s = [], "pending" === i.state() && N()
-      }, c(r.ready), N(), e.exports = window.Webflow = r
+      }, c(r.ready), N(), e.exports = window.metaverse = r
     },
     27624: function (e, t, n) {
       "use strict";
@@ -2409,7 +2409,7 @@
           })
         },
         K = (e, t, n) => {
-          if (["f_weight_", "f_width_", "f_length_", "f_height_", "f_sku_"].some(t => e.from === t) && (t["innerHTML" === e.to ? "innerText" : e.to] = n[e.from] || "", en(t)), "f_price_" === e.from && n.f_price_ && (t["innerHTML" === e.to ? "innerText" : e.to] = (0, T.renderPriceFromSettings)(n.f_price_, window.__WEBFLOW_CURRENCY_SETTINGS), en(t)), "f_compare_at_price_7dr10dr" === e.from && (n.f_compare_at_price_7dr10dr ? t["innerHTML" === e.to ? "innerText" : e.to] = (0, T.renderPriceFromSettings)(n.f_compare_at_price_7dr10dr, window.__WEBFLOW_CURRENCY_SETTINGS) : t["innerHTML" === e.to ? "innerText" : e.to] = "", en(t)), "f_main_image_4dr" === e.from || "f_main_image_4dr.url" === e.from) {
+          if (["f_weight_", "f_width_", "f_length_", "f_height_", "f_sku_"].some(t => e.from === t) && (t["innerHTML" === e.to ? "innerText" : e.to] = n[e.from] || "", en(t)), "f_price_" === e.from && n.f_price_ && (t["innerHTML" === e.to ? "innerText" : e.to] = (0, T.renderPriceFromSettings)(n.f_price_, window.__metaverse_CURRENCY_SETTINGS), en(t)), "f_compare_at_price_7dr10dr" === e.from && (n.f_compare_at_price_7dr10dr ? t["innerHTML" === e.to ? "innerText" : e.to] = (0, T.renderPriceFromSettings)(n.f_compare_at_price_7dr10dr, window.__metaverse_CURRENCY_SETTINGS) : t["innerHTML" === e.to ? "innerText" : e.to] = "", en(t)), "f_main_image_4dr" === e.from || "f_main_image_4dr.url" === e.from) {
             let a = (0, u.default)(n, e.from.replace(/\.url$/, ""));
             "style.background-image" === e.to ? t.style.backgroundImage = a && a.url ? `url("${a.url}")` : "none" : "media" === e.to ? t.classList.contains("w-lightbox") && ea(t, a) : "src" === e.to && (a && a.url ? (t.src = a.url, (0, p.removeWDynBindEmptyClass)(t), t.hasAttribute("srcset") && t.removeAttribute("srcset")) : (t.removeAttribute("src"), t.classList.add(s.CLASS_NAME_W_DYN_BIND_EMPTY)))
           }
@@ -2482,7 +2482,7 @@
               });
               let l = a(t).siblings(`[${o.DATA_ATTR_NODE_TYPE}="${o.NODE_TYPE_COMMERCE_ADD_TO_CART_ERROR}"]`)[0];
               l instanceof Element && (l.style.display = "none")
-            }), window.Webflow.require("lightbox") && window.Webflow.require("lightbox").ready()) : h(e, {
+            }), window.metaverse.require("lightbox") && window.metaverse.require("lightbox").ready()) : h(e, {
               selectedSku: ""
             })
           })
@@ -2508,7 +2508,7 @@
         J = (e, t, n) => {
           if (!(e instanceof CustomEvent && e.type === o.RENDER_TREE_EVENT)) return;
           let a = document.querySelectorAll(`[${o.DATA_ATTR_NODE_TYPE}="${o.NODE_TYPE_COMMERCE_ADD_TO_CART_FORM}"]`);
-          if (window.Webflow.env("preview")) {
+          if (window.metaverse.env("preview")) {
             e.detail.isInitial && (0, g.default)(a, e => {
               let t = new O.PillGroups(e, ({
                 optionId: e,
@@ -2522,7 +2522,7 @@
             });
             return
           }
-          window.Webflow.env("design") || (0, g.default)(a, a => {
+          window.metaverse.env("design") || (0, g.default)(a, a => {
             let i = (0, E.findElementByNodeType)(o.NODE_TYPE_COMMERCE_ADD_TO_CART_BUTTON, a);
             if (i) {
               let e = document.querySelectorAll(`[${o.DATA_ATTR_NODE_TYPE}="${o.NODE_TYPE_COMMERCE_CART_WRAPPER}"][${o.DATA_ATTR_OPEN_PRODUCT}]`);
@@ -2627,7 +2627,7 @@
           target: e
         }) => e instanceof Element && e.getAttribute(o.DATA_ATTR_NODE_TYPE) === o.NODE_TYPE_COMMERCE_BUY_NOW_BUTTON,
         er = (e, t) => {
-          if (e.preventDefault(), window.Webflow.env("preview")) return;
+          if (e.preventDefault(), window.metaverse.env("preview")) return;
           let n = e.target,
             a = (0, E.findClosestElementByNodeType)(o.NODE_TYPE_COMMERCE_ADD_TO_CART_FORM, n);
           if (!(n instanceof HTMLAnchorElement) || !(a instanceof HTMLFormElement) || n.classList.contains("w--ecommerce-buy-now-disabled")) return;
@@ -2803,7 +2803,7 @@
         }) => e instanceof Element && e.getAttribute(s.DATA_ATTR_NODE_TYPE) === s.NODE_TYPE_COMMERCE_CART_WRAPPER && e, D = ({
           target: e
         }) => e instanceof Element && e.hasAttribute(s.DATA_ATTR_NODE_TYPE) && e.getAttribute(s.DATA_ATTR_NODE_TYPE) === s.NODE_TYPE_COMMERCE_CART_FORM, U = e => e instanceof Element ? e instanceof HTMLFormElement ? e : U(e.parentElement) : null, w = (e, t) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview")) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview")) return;
           e.preventDefault();
           let {
             currentTarget: n
@@ -2844,7 +2844,7 @@
             }
           })
         }, G = (e, t) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview")) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview")) return;
           e.preventDefault();
           let {
             currentTarget: n
@@ -2877,7 +2877,7 @@
             t.textContent = r, (0, c.triggerRender)(e)
           })
         }, k = e => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview")) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview")) return;
           e.preventDefault();
           let {
             currentTarget: t
@@ -2933,23 +2933,23 @@
           if (o) {
             document.addEventListener("keydown", ed), a.setAttribute(s.CART_OPEN, ""), d.style.removeProperty("display");
             let e = eo(l);
-            e.length > 0 && e[0].focus(), b && !r && (window.Webflow.tram(d).add(O).set({
+            e.length > 0 && e[0].focus(), b && !r && (window.metaverse.tram(d).add(O).set({
               opacity: 0
             }).start({
               opacity: 1
-            }), window.Webflow.tram(l).add(`transform ${p} ${_} 0ms`).set(t).start(n))
+            }), window.metaverse.tram(l).add(`transform ${p} ${_} 0ms`).set(t).start(n))
           } else {
-            document.removeEventListener("keydown", ed), a.removeAttribute(s.CART_OPEN), b ? (window.Webflow.tram(d).add(O).start({
+            document.removeEventListener("keydown", ed), a.removeAttribute(s.CART_OPEN), b ? (window.metaverse.tram(d).add(O).start({
               opacity: 0
             }).then(() => {
-              d.style.display = "none", window.Webflow.tram(l).stop()
-            }), window.Webflow.tram(l).add(`transform ${p} ${_} 50ms`).start(t)) : d.style.display = "none";
+              d.style.display = "none", window.metaverse.tram(l).stop()
+            }), window.metaverse.tram(l).add(`transform ${p} ${_} 50ms`).start(t)) : d.style.display = "none";
             let e = (0, c.findElementByNodeType)(s.NODE_TYPE_COMMERCE_CART_OPEN_LINK, u);
             e instanceof Element && e.focus()
           }
         }, x = e => {
           let t;
-          if (window.Webflow.env("design")) return;
+          if (window.metaverse.env("design")) return;
           let {
             currentTarget: n,
             type: a
@@ -2967,7 +2967,7 @@
             bubbles: !0
           }), r && n.getAttribute(s.DATA_ATTR_NODE_TYPE) === s.NODE_TYPE_COMMERCE_CART_CLOSE_LINK && (r.removeEventListener("mouseleave", Y), i.removeEventListener("mouseleave", Y))), t && i.dispatchEvent(t)
         }, V = e => {
-          if (window.Webflow.env("preview")) return;
+          if (window.metaverse.env("preview")) return;
           e.preventDefault();
           let {
             currentTarget: t
@@ -2997,7 +2997,7 @@
           }
           window.location = t.href
         }, B = e => {
-          window.Webflow.env("preview") || e.preventDefault()
+          window.metaverse.env("preview") || e.preventDefault()
         }, Y = e => {
           let {
             target: t,
@@ -3042,9 +3042,9 @@
             element: e,
             wasOpen: t
           }) => {
-            window.Webflow.tram(e).destroy(), e.style.opacity = "1";
+            window.metaverse.tram(e).destroy(), e.style.opacity = "1";
             let n = ei(e);
-            n && (window.Webflow.tram(n).destroy(), n.style.transform = ""), t ? e.style.removeProperty("display") : e.style.display = "none";
+            n && (window.metaverse.tram(n).destroy(), n.style.transform = ""), t ? e.style.removeProperty("display") : e.style.display = "none";
             let a = e.parentElement;
             a && a.removeAttribute(s.CART_OPEN)
           }), H = []
@@ -3081,7 +3081,7 @@
           let l = e.querySelector(`[${s.PAYPAL_BUTTON_ELEMENT_INSTANCE}]`);
           return r && l && ((0, c.isFreeOrder)(t) || (0, c.hasSubscription)(t) ? (0, c.hideElement)(l) : (0, c.showElement)(l)), (0, u.updateWebPaymentsButton)(e, t, n), e
         }, en = (e, t, n) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || !(e instanceof CustomEvent && e.type === s.RENDER_TREE_EVENT)) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || !(e instanceof CustomEvent && e.type === s.RENDER_TREE_EVENT)) return;
           let a = [],
             {
               detail: i
@@ -3156,7 +3156,7 @@
             e.shiftKey ? document.activeElement === i && (r.focus(), e.preventDefault()) : document.activeElement === r && (i.focus(), e.preventDefault())
           })
         }, es = e => {
-          e.on("click", N, w), e.on("change", C, G), e.on("focus", L, k), e.on("click", v, x), e.on("click", M, V), e.on("mouseover", v, x), e.on(s.CHANGE_CART_EVENT, P, F), e.on(s.RENDER_TREE_EVENT, Boolean, en), e.on("submit", D, B), e.on("keyup", Boolean, ea), e.on("click", Boolean, er), (window.Webflow.env("design") || window.Webflow.env("preview")) && (window.addEventListener("__wf_preview", j), window.addEventListener("__wf_design", W))
+          e.on("click", N, w), e.on("change", C, G), e.on("focus", L, k), e.on("click", v, x), e.on("click", M, V), e.on("mouseover", v, x), e.on(s.CHANGE_CART_EVENT, P, F), e.on(s.RENDER_TREE_EVENT, Boolean, en), e.on("submit", D, B), e.on("keyup", Boolean, ea), e.on("click", Boolean, er), (window.metaverse.env("design") || window.metaverse.env("preview")) && (window.addEventListener("__wf_preview", j), window.addEventListener("__wf_design", W))
         }, ec = {
           register: es
         }
@@ -3264,7 +3264,7 @@
           return e instanceof HTMLInputElement && !!t && e
         },
         I = (e, t, n) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || !(e instanceof CustomEvent && e.type === o.RENDER_TREE_EVENT)) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || !(e instanceof CustomEvent && e.type === o.RENDER_TREE_EVENT)) return;
           let a = [],
             {
               detail: i
@@ -3296,7 +3296,7 @@
           }
         },
         R = (e, t, n) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || O) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || O) return;
           let {
             currentTarget: a
           } = e;
@@ -3762,7 +3762,7 @@
         })
       },
         p = e => {
-          if (!(window.Webflow.env("design") || window.Webflow.env("preview")) && e.isInitialized()) [...(0, o.findAllElementsByNodeType)(s.NODE_TYPE_COMMERCE_CHECKOUT_FORM_CONTAINER), ...(0, o.findAllElementsByNodeType)(s.NODE_TYPE_COMMERCE_CART_WRAPPER)].forEach((t, n) => {
+          if (!(window.metaverse.env("design") || window.metaverse.env("preview")) && e.isInitialized()) [...(0, o.findAllElementsByNodeType)(s.NODE_TYPE_COMMERCE_CHECKOUT_FORM_CONTAINER), ...(0, o.findAllElementsByNodeType)(s.NODE_TYPE_COMMERCE_CART_WRAPPER)].forEach((t, n) => {
             e.createElementsInstance(n), t.setAttribute(s.STRIPE_ELEMENT_INSTANCE, String(n))
           }), Array.from(document.querySelectorAll(`[${s.STRIPE_ELEMENT_TYPE}]`)).forEach(t => {
             let n = t.getAttribute(s.STRIPE_ELEMENT_TYPE);
@@ -3979,7 +3979,7 @@
         w = (e, t = !1) => {
           let n = `/order-confirmation?orderId=${e.orderId}&token=${e.token}`;
           t ? window.parent.postMessage(JSON.stringify({
-            isWebflow: !0,
+            ismetaverse: !0,
             type: "success",
             detail: n
           }), window.location.origin) : window.location.href = n
@@ -4135,7 +4135,7 @@
           }), t
         },
         I = e => {
-          let t = window.Webflow.tram(e);
+          let t = window.metaverse.tram(e);
           t.set({
             opacity: .2
           }), t.add("opacity 500ms ease-in-out");
@@ -4574,12 +4574,12 @@
         siteId: e
       }) {
         i = (0, s.createApolloClient)({
-          path: window.Webflow.env("design") || window.Webflow.env("preview") ? `/api/v1/sites/${e}/apollo` : "/.wf_graphql/apollo",
+          path: window.metaverse.env("design") || window.metaverse.env("preview") ? `/api/v1/sites/${e}/apollo` : "/.wf_graphql/apollo",
           retryConfig: {
             maxAttempts: 5
           },
           useCsrf: !0
-        }), r = new T.StripeStore(document), a = new c.default(i, r), l.default.register(a), u.default.register(a), f.default.register(a), E.default.register(a), p.default.register(a), y.default.register(a), (0, g.initializeStripeElements)(r), b(), O(), (0, m.triggerRender)(null, !0), window.Webflow.env() || window.Webflow.load((0, y.renderPaypalButtons)(i))
+        }), r = new T.StripeStore(document), a = new c.default(i, r), l.default.register(a), u.default.register(a), f.default.register(a), E.default.register(a), p.default.register(a), y.default.register(a), (0, g.initializeStripeElements)(r), b(), O(), (0, m.triggerRender)(null, !0), window.metaverse.env() || window.metaverse.load((0, y.renderPaypalButtons)(i))
       }
 
       function A() {
@@ -4626,7 +4626,7 @@
         (0, s.renderTree)(e, t)
       },
         f = (e, t) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || !(e instanceof CustomEvent && e.type === c.RENDER_TREE_EVENT)) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || !(e instanceof CustomEvent && e.type === c.RENDER_TREE_EVENT)) return;
           let n = [],
             {
               detail: a
@@ -4706,7 +4706,7 @@
         }) => !!((0, o.findClosestElementByNodeType)(u.NODE_TYPE_COMMERCE_CHECKOUT_PLACE_ORDER_BUTTON, e) && e instanceof Element) && e,
         E = !1,
         p = (e, t) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || !(e instanceof CustomEvent && e.type === u.RENDER_TREE_EVENT)) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || !(e instanceof CustomEvent && e.type === u.RENDER_TREE_EVENT)) return;
           let n = (0, o.findAllElementsByNodeType)(u.NODE_TYPE_COMMERCE_PAYPAL_CHECKOUT_FORM_CONTAINER);
           if (!n || 0 === n.length) return;
           let a = [],
@@ -4738,7 +4738,7 @@
           requiresShipping: n
         }) => !HTMLFormElement.prototype.reportValidity || !(n && !e.reportValidity() || t && t instanceof HTMLFormElement && !t.reportValidity()),
         y = (e, t) => {
-          if (window.Webflow.env("design") || window.Webflow.env("preview") || T) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview") || T) return;
           let {
             currentTarget: n
           } = e;
@@ -4778,7 +4778,7 @@
               if (p(), c.default.error(e), i.style.removeProperty("display"), (0, d.updateErrorMessage)(i, e), e.graphQLErrors && e.graphQLErrors[0] && e.graphQLErrors[0].message) {
                 let t = (0, o.safeParseJson)(e.graphQLErrors[0].message);
                 t && t.details && t.details[0] && "INSTRUMENT_DECLINED" === t.details[0].issue && window.parent.postMessage(JSON.stringify({
-                  isWebflow: !0,
+                  ismetaverse: !0,
                   type: "error",
                   detail: t
                 }), window.location.origin)
@@ -4819,7 +4819,7 @@
           let d = s => {
             if (s.origin !== window.location.origin) return;
             let c = (0, o.safeParseJson)(String(s.data));
-            c && !0 === c.isWebflow && c.type && c.detail && ("success" === c.type && (window.removeEventListener("message", d), window.location.href = c.detail), "error" === c.type && (window.removeEventListener("message", d), i ? t.style.overflow = i : t.style.overflow = "", r ? n.style.display = r : n.style.display = "", n.parentNode && n.parentNode.removeChild(a), e.restart()))
+            c && !0 === c.ismetaverse && c.type && c.detail && ("success" === c.type && (window.removeEventListener("message", d), window.location.href = c.detail), "error" === c.type && (window.removeEventListener("message", d), i ? t.style.overflow = i : t.style.overflow = "", r ? n.style.display = r : n.style.display = "", n.parentNode && n.parentNode.removeChild(a), e.restart()))
           };
           window.addEventListener("message", d)
         },
@@ -4932,7 +4932,7 @@
             timezone: i,
             pageLinkHrefPrefix: o,
             collectionSlugMap: d,
-            currencySettings: window.__WEBFLOW_CURRENCY_SETTINGS
+            currencySettings: window.__metaverse_CURRENCY_SETTINGS
           }),
             T = C(e, l);
           "function" == typeof T && T(c, t, p)
@@ -5184,7 +5184,7 @@
         d = n(10873);
       class s {
         constructor(e) {
-          if (window.Webflow.env("design") || window.Webflow.env("preview")) return;
+          if (window.metaverse.env("design") || window.metaverse.env("preview")) return;
           let t = e.querySelector(`[${d.STRIPE_ECOMMERCE_KEY}]`);
           if (!t) return this.store = {
             initialized: !1,
@@ -5358,8 +5358,8 @@
   }
 `,
         g = (e, t, n) => {
-          if (e.preventDefault(), window.Webflow.env("design") || window.Webflow.env("preview")) {
-            window.Webflow.env("preview") && window.alert("Web Payments is not available in preview mode.");
+          if (e.preventDefault(), window.metaverse.env("design") || window.metaverse.env("preview")) {
+            window.metaverse.env("preview") && window.alert("Web Payments is not available in preview mode.");
             return
           }
           let {
@@ -5993,7 +5993,7 @@
         f.ready = f.design = f.preview = function () {
           O && ((r = document.createElement("script")).src = "https://challenges.cloudflare.com/turnstile/v0/api.js", document.head.appendChild(r), r.onload = () => {
             E.trigger(o)
-          }), l = "https://webflow.com/api/v1/form/" + (s = e("html").attr("data-wf-site")), T && l.indexOf("https://webflow.com") >= 0 && (l = l.replace("https://webflow.com", "https://formdata.webflow.com")), u = `${l}/signFile`, (d = e(m + " form")).length && d.each(A), (!_ || a.env("preview")) && !c && function () {
+          }), l = "https://metaverse.com/api/v1/form/" + (s = e("html").attr("data-wf-site")), T && l.indexOf("https://metaverse.com") >= 0 && (l = l.replace("https://metaverse.com", "https://formdata.metaverse.com")), u = `${l}/signFile`, (d = e(m + " form")).length && d.each(A), (!_ || a.env("preview")) && !c && function () {
             c = !0, E.on("submit", m + " form", function (t) {
               var n = e.data(this, m);
               n.handler && (n.evt = t, n.handler(n))
@@ -6646,12 +6646,12 @@
         v = [N(A), " ", N(h)].join(""),
         M = [{
           id: "5d8fcb6d94dd1853060fb3b3",
-          name: "The modern web design process - Webflow Ebook.pdf",
-          url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8a680b972888929747b_The%20modern%20web%20design%20process%20-%20Webflow%20Ebook.pdf"
+          name: "The modern web design process - metaverse Ebook.pdf",
+          url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8a680b972888929747b_The%20modern%20web%20design%20process%20-%20metaverse%20Ebook.pdf"
         }, {
           id: "5d8fcb6d94dd1853060fb3b4",
-          name: "The freelance web designers guide - Webflow Ebook.pdf",
-          url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8e6abe52b33243a22cf_The%20freelance%20web%20designer%E2%80%99s%20guide%20-%20Webflow%20Ebook.pdf"
+          name: "The freelance web designers guide - metaverse Ebook.pdf",
+          url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8e6abe52b33243a22cf_The%20freelance%20web%20designer%E2%80%99s%20guide%20-%20metaverse%20Ebook.pdf"
         }],
         P = "download-files",
         D = {
@@ -13153,7 +13153,7 @@
           value: e.value
         }),
         s = e => {
-          let t = window.Webflow.require("lottie");
+          let t = window.metaverse.require("lottie");
           if (!t) return null;
           let n = t.createInstance(e);
           return n.stop(), n.setSubframe(!0), n
@@ -13164,7 +13164,7 @@
           e.goToFrame(e.frames * a)
         },
         l = e => {
-          let t = window.Webflow.require("lottie");
+          let t = window.metaverse.require("lottie");
           t && t.createInstance(e).stop()
         }
     },
@@ -13203,7 +13203,7 @@
       let i = "--wf-rive-fit",
         r = "--wf-rive-alignment",
         o = e => document.querySelector(`[data-w-id="${e}"]`),
-        d = () => window.Webflow.require("rive"),
+        d = () => window.metaverse.require("rive"),
         s = (e, t) => e.value.inputs[t],
         c = () => null,
         l = (e, t) => {
@@ -13310,7 +13310,7 @@
         get: n[a]
       });
       let i = e => document.querySelector(`[data-w-id="${e}"]`),
-        r = () => window.Webflow.require("spline"),
+        r = () => window.metaverse.require("spline"),
         o = (e, t) => e.filter(e => !t.includes(e)),
         d = (e, t) => e.value[t],
         s = () => null,
@@ -16991,7 +16991,7 @@
         m = `form[${r.USYS_DATA_ATTRS.formType}="${r.USYS_FORM_TYPES.account}"]`;
 
       function g(e) {
-        if (window.Webflow.env("design") || window.Webflow.env("preview")) return;
+        if (window.metaverse.env("design") || window.metaverse.env("preview")) return;
         let t = Array.from(document.querySelectorAll(E));
         t.length > 0 && s.userSystemsRequestClient.query({
           query: c.getUserSubscriptions
@@ -17042,7 +17042,7 @@
 
       function I() {
         let e = document.querySelector(`[${r.USYS_DATA_ATTRS.userAccount}]`);
-        if (!e || window.Webflow.env("design") || window.Webflow.env("preview")) return;
+        if (!e || window.metaverse.env("design") || window.metaverse.env("preview")) return;
         let t = e.querySelector("." + r.USYS_DOM_CLASS_NAMES.formSuccess),
           n = e.querySelector("." + r.USYS_DOM_CLASS_NAMES.formError),
           a = function () {
@@ -17395,12 +17395,12 @@
         s = `[${o.USYS_DATA_ATTRS.logout}]`;
 
       function c() {
-        window.Webflow.env("preview") || (window.location = "/log-in")
+        window.metaverse.env("preview") || (window.location = "/log-in")
       }
 
       function l(e) {
         e.preventDefault(), f().then(() => {
-          window.Webflow.location("/")
+          window.metaverse.location("/")
         })
       }
 
@@ -17409,7 +17409,7 @@
           let e = document.querySelectorAll(s);
           return Array.prototype.slice.call(e).filter(e => e instanceof HTMLButtonElement)
         })().forEach(e => {
-          document.cookie.split(";").some(e => e.indexOf(o.LOGGEDIN_COOKIE_NAME) > -1) ? (e.innerHTML = e.getAttribute(o.USYS_DATA_ATTRS.logout) || "Log out", e.removeEventListener("click", c), e.addEventListener("click", l)) : window.Webflow.env("design") || (e.innerHTML = e.getAttribute(o.USYS_DATA_ATTRS.login) || "Log in", e.removeEventListener("click", l), e.addEventListener("click", c))
+          document.cookie.split(";").some(e => e.indexOf(o.LOGGEDIN_COOKIE_NAME) > -1) ? (e.innerHTML = e.getAttribute(o.USYS_DATA_ATTRS.logout) || "Log out", e.removeEventListener("click", c), e.addEventListener("click", l)) : window.metaverse.env("design") || (e.innerHTML = e.getAttribute(o.USYS_DATA_ATTRS.login) || "Log in", e.removeEventListener("click", l), e.addEventListener("click", c))
         })
       }
 
@@ -17724,7 +17724,7 @@
               } = n[a], l = (0, o.default)(t, i), u = (0, d.transformers)(l, r, {
                 timezone: s,
                 collectionSlugMap: {},
-                currencySettings: window.__WEBFLOW_CURRENCY_SETTINGS
+                currencySettings: window.__metaverse_CURRENCY_SETTINGS
               }), f = T(a);
               f && f(e, c, u)
             })
@@ -18385,7 +18385,7 @@
       function O(e, t = !1) {
         let n = y(),
           a = n ? `${window.location.origin}/${_(n)}` : e ? `${window.location.origin}/${_(e)}` : void 0;
-        if (a) return t ? setTimeout(() => window.Webflow.location(a), 3e3) : window.Webflow.location(a)
+        if (a) return t ? setTimeout(() => window.metaverse.location(a), 3e3) : window.metaverse.location(a)
       }
       let b = [".w-file-upload-error"],
         R = (e, t, n) => {
@@ -18636,7 +18636,7 @@
       let i = !1;
 
       function r(e, t) {
-        if (window.Webflow.env("design") || window.Webflow.env("preview")) return fetch(e, t);
+        if (window.metaverse.env("design") || window.metaverse.env("preview")) return fetch(e, t);
         let n = o(),
           a = t?.headers || {};
         return new Promise((r, d) => {
@@ -18702,7 +18702,7 @@
           attempts: (i, r, o) => {
             let d = [],
               s = !1;
-            return i >= e ? d.push("max_attempts:true") : (d.push("max_attempts:false"), o && ("all" === n && o.statusCode >= 500 || "bad-gateway" === n && 502 === o.statusCode) ? (d.push("reason:server_error"), d.push(`status_code:${o.statusCode}`), s = !0) : t && o && o.result && "BadCrossOriginRequest" === o.result.code && (d.push("reason:cors_error"), s = !0)), d.push(`attempt:${i}`, `retry:${s}`), a?.logDistributionMetric("webflow.renderer.apollo.request.error", 1, ...d), s
+            return i >= e ? d.push("max_attempts:true") : (d.push("max_attempts:false"), o && ("all" === n && o.statusCode >= 500 || "bad-gateway" === n && 502 === o.statusCode) ? (d.push("reason:server_error"), d.push(`status_code:${o.statusCode}`), s = !0) : t && o && o.result && "BadCrossOriginRequest" === o.result.code && (d.push("reason:cors_error"), s = !0)), d.push(`attempt:${i}`, `retry:${s}`), a?.logDistributionMetric("metaverse.renderer.apollo.request.error", 1, ...d), s
           },
           delay: e => 500 * e + 500 * Math.random()
         })
@@ -19474,10 +19474,10 @@
         }
       }
       let l = {
-        "@webflow/Boolean": !0
+        "@metaverse/Boolean": !0
       },
         u = {
-          "@webflow/Boolean": !1
+          "@metaverse/Boolean": !1
         },
         f = (e, t) => {
           if (e === t || e != e && t != t) return !0;
@@ -19539,7 +19539,7 @@
       }
     },
     35662: function () {
-      Webflow.require("ix2").init({
+      metaverse.require("ix2").init({
         events: {
           e: {
             id: "e",
@@ -34815,9 +34815,9 @@
             max: 479
           }]
         }
-      }), Webflow.require("commerce") && Webflow.require("commerce").init({
+      }), metaverse.require("commerce") && metaverse.require("commerce").init({
         siteId: "67d5482886ed2b38b65e6d7c",
-        apiUrl: "https://render.webflow.com"
+        apiUrl: "https://render.metaverse.com"
       })
     },
     2292: function () { }
