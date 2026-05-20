@@ -6502,7 +6502,7 @@ figure {
 }
 
 .integrations-image-single {
-    background-image: url("/assests/images/Innovativesolutionsbg.svg");
+    /* background-image: url("/assests/images/Innovativesolutionsbg.svg"); */
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
