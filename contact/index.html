@@ -120,13 +120,8 @@
                   <div class="w-layout-grid integrations-grid">
                      <div class="integrations-typography">
                         <div class="integrations-title-description">
-                           <h2 class="integrations-title">We’re Here to Help</h2>
-                           <p class="integrations-description">For inquiries related to investments, partnerships, platform access,
-                              or general information, please reach out to the appropriate channel below.
-                           </p>
-                           <p class="integrations-description">Our team is committed to responding promptly and providing the
-                              support you need.
-                           </p>
+                           <h2 class="integrations-title" id="contact-help-title"></h2>
+                           <div id="contact-help-paragraphs"></div>
                         </div>
                         <img loading="lazy"
                            src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -141,10 +136,10 @@
                            src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d696e5daef6a95cc1fed0c_Solving%20Card%20Bottom%20Element.svg"
                            alt="" class="cta-bottom-right-element" />
                      </div>
-                     <div class="integrations-image-wrapper">
+                     <div class="integrations-image-wrapper" id="contact-help-image-wrapper">
                         <div class="integrations-image-single">
                            <img style="opacity:1" data-w-id="f1af56b2-4eac-bb8f-2e79-f44613eb0d5c" alt=""
-                              src="../assests/images/blockchain-artchit.svg" loading="lazy" class="integrations-image" />
+                              id="contact-help-image" loading="lazy" class="integrations-image" />
                         </div>
                         <img loading="lazy"
                            src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -161,12 +156,12 @@
                <div class="features-hv2-bottom-content margin-top-40">
                   <div class=" w-layout-grid features-hv2-grid">
                      <div class="solving-card">
-                        <div class="solving-card-icon-wrapper"><img src="/assests/images/message.svg" loading="lazy" alt=""
+                        <div class="solving-card-icon-wrapper"><img id="contact-card-1-icon" loading="lazy" alt=""
                            class="solving-card-icon" /></div>
                         <div class="solving-card-title-description">
-                           <p class="contact-card-subheader">General Inquiries</p>
-                           <p class="contact-card-desc">For general questions about the IIC METAVERSE ecosystem:</p>
-                           <p class="contact-card-data">info@iiccrypto.com</p>
+                           <p class="contact-card-subheader" id="contact-card-1-title"></p>
+                           <p class="contact-card-desc" id="contact-card-1-desc"></p>
+                           <p class="contact-card-data" id="contact-card-1-email"></p>
                         </div>
                         <img
                            src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -175,12 +170,12 @@
                            loading="lazy" alt="" class="solving-card-bottom-element" />
                      </div>
                      <div class="solving-card">
-                        <div class="solving-card-icon-wrapper"><img src="/assests/images/conatct.svg" loading="lazy" alt=""
+                        <div class="solving-card-icon-wrapper"><img id="contact-card-2-icon" loading="lazy" alt=""
                            class="solving-card-icon" /></div>
                         <div class="solving-card-title-description">
-                           <p class="contact-card-subheader">Technical Support</p>
-                           <p class="contact-card-desc">For platform access, technical issues, or assistance:</p>
-                           <p class="contact-card-data">support@iiccrypto.com</p>
+                           <p class="contact-card-subheader" id="contact-card-2-title"></p>
+                           <p class="contact-card-desc" id="contact-card-2-desc"></p>
+                           <p class="contact-card-data" id="contact-card-2-email"></p>
                         </div>
                         <img
                            src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -203,7 +198,7 @@
                </div>
                <div data-w-id="cce02c8f-bf74-6eb9-db79-4a28a0499fb5" style="opacity:0" class="contact-us-wrapper">
                   <div class="contact-us-form-block w-form">
-                     <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get" class="contact-us-form"
+                     <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="post" class="contact-us-form"
                         data-wf-page-id="67dbbfdffa371d90db2bebce" data-wf-element-id="668cf8f6-42ea-93b3-8347-b7eb10d2c9d7"
                         data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e">
                         <div class="contact-us-form-wrapper">
@@ -222,14 +217,14 @@
                            <div class="contact-us-form-single">
                               <label for="Company" class="contact-us-form-text-field">Company</label>
                               <input class="contact-us-form-input-field w-input" maxlength="256" name="Company" data-name="Company"
-                                 placeholder="Enter your company" type="text" id="Company" required="" />
+                                 placeholder="Enter your company" type="text" id="Company" />
                            </div>
                            <div class="contact-us-form-single">
                               <label for="Inquiry-Type" class="contact-us-form-text-field">
                               Inquiry Type
                               </label>
                               <select class="contact-us-form-input-field w-input" name="Inquiry-Type" data-name="Inquiry Type"
-                                 id="Inquiry-Type" required>
+                                 id="Inquiry-Type">
                                  <option value="">Select</option>
                                  <option value="general">General Inquiry</option>
                                  <option value="support">Support</option>
@@ -273,10 +268,10 @@
                <div data-w-id="ed80b760-dc62-3b5b-286d-191f9b33ea40" style="opacity:0"
                   class="testimonial-section-title-wrapper-hv2">
                   <div class="section-subtitle-wrapper">
-                     <div class="section-subtitle">[ Where we are? ]</div>
+                     <div class="section-subtitle" id="contact-global-badge"></div>
                   </div>
                   <div class="section-title-single testimonials">
-                     <h2 class="section-title">Our Global Presence</h2>
+                     <h2 class="section-title" id="contact-global-title"></h2>
                   </div>
                   <img class="testimonial-world-image-hv2"
                      src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d941ddefbad79809e0d252_Testimonial%20World%20Image%20Hv2.webp"
@@ -284,18 +279,7 @@
                      data-w-id="d34a739a-7e51-b0f7-fa91-0d8000c83706" loading="lazy"
                      srcset="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d941ddefbad79809e0d252_Testimonial%20World%20Image%20Hv2-p-500.webp 500w, https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d941ddefbad79809e0d252_Testimonial%20World%20Image%20Hv2.webp 811w" />
                   <div class="global-impact container margin-top-29">
-                     <div class="global-impact-innertext">
-                        <p class="cta-description-text contact">JIIC METAVERSE operates as part of an international ecosystem with
-                           a
-                           strategic presence in
-                           key global markets.
-                        </p>
-                        <p class="cta-description-text contact">Primary coordination and operations are supported through Dubai,
-                           enabling
-                           regional and
-                           international engagement.
-                        </p>
-                     </div>
+                     <div class="global-impact-innertext" id="contact-global-paragraphs"></div>
                   </div>
                </div>
             </div>
@@ -510,33 +494,230 @@
       <script src="/assests/js/chunk2.js" type="text/javascript"></script>
 
       <script>
-    // Dynamically load about page content from Express/MongoDB server
-    (async function loadDynamicAboutContent() {
-      const API_URL = 'http://localhost:5000/api/content/contact';
-      const BACKEND_URL = 'http://localhost:5000';
+    const BACKEND_URL = 'http://localhost:5000';
+    const CONTENT_API_URL = BACKEND_URL + '/api/content/contact';
+    const INQUIRY_API_URL = BACKEND_URL + '/api/contact-inquiries';
+
+    function resolveMediaUrl(url) {
+      if (!url) return '';
+      return url.startsWith('http') ? url : (BACKEND_URL + url);
+    }
+
+    function normalizeParagraphs(paragraphs) {
+      if (!paragraphs) return [];
+      if (typeof paragraphs === 'string') {
+        try {
+          const parsed = JSON.parse(paragraphs);
+          if (Array.isArray(parsed)) return parsed;
+        } catch (e) { /* fall through */ }
+        return paragraphs.trim() ? [paragraphs] : [];
+      }
+      if (Array.isArray(paragraphs)) {
+        if (paragraphs.length === 1 && typeof paragraphs[0] === 'string' && paragraphs[0].trim().startsWith('[')) {
+          try {
+            const parsed = JSON.parse(paragraphs[0]);
+            if (Array.isArray(parsed)) return parsed;
+          } catch (e) { /* fall through */ }
+        }
+        return paragraphs;
+      }
+      return [];
+    }
+
+    function renderParagraphs(container, paragraphs, className) {
+      if (!container) return;
+      const list = normalizeParagraphs(paragraphs);
+      container.innerHTML = '';
+      list.forEach(text => {
+        if (text && String(text).trim()) {
+          const p = document.createElement('p');
+          p.className = className;
+          p.innerHTML = text;
+          container.appendChild(p);
+        }
+      });
+    }
+
+    function setImageSrc(imgEl, url, fallback) {
+      if (!imgEl) return;
+      const finalUrl = url || fallback;
+      if (finalUrl) {
+        imgEl.src = resolveMediaUrl(finalUrl);
+        imgEl.style.display = '';
+      } else {
+        imgEl.removeAttribute('src');
+        imgEl.style.display = 'none';
+      }
+    }
+
+    // Load contact page CMS content from backend
+    (async function loadDynamicContactContent() {
       try {
-        const response = await fetch(API_URL);
+        const response = await fetch(CONTENT_API_URL);
         if (!response.ok) throw new Error('API server unreachable');
         const result = await response.json();
-        if (result.success && result.data) {
-          const data = result.data;
+        if (!result.success || !result.data) return;
 
+        const data = result.data;
 
-          // 1. Hero
-          const aboutBadgeEl = document.getElementById('contactus-top-header');
-          const aboutTitleEl = document.getElementById('contactus-hero-header');
-          const aboutDescEl = document.getElementById('contactus-description');
+        // Hero
+        const heroTopEl = document.getElementById('contactus-top-header');
+        const heroTitleEl = document.getElementById('contactus-hero-header');
+        const heroDescEl = document.getElementById('contactus-description');
+        if (heroTopEl) heroTopEl.textContent = data.contactHeroTopDescription || '';
+        if (heroTitleEl) heroTitleEl.textContent = data.contactHeroTitle || '';
+        if (heroDescEl) heroDescEl.textContent = data.contactHeroDescription || '';
 
-          const contactHelpTitle = document.getElementById('contactus-description');
+        // We're Here to Help
+        const helpTitleEl = document.getElementById('contact-help-title');
+        if (helpTitleEl) helpTitleEl.textContent = data.contacthelpTitle || '';
+        renderParagraphs(
+          document.getElementById('contact-help-paragraphs'),
+          data.contacthelpParagraphs,
+          'integrations-description'
+        );
+        setImageSrc(document.getElementById('contact-help-image'), data.contacthelpImage, '/assests/images/Innovativesolutions.svg');
 
-          if (aboutBadgeEl && data.contactHeroTopDescription) aboutBadgeEl.textContent = data.contactHeroTopDescription;
-          if (aboutTitleEl && data.contactHeroTitle) aboutTitleEl.textContent = data.contactHeroTitle;
-          if (aboutDescEl && data.contactHeroDescription) aboutDescEl.textContent = data.contactHeroDescription;
-
+        const helpImageWrap = document.getElementById('contact-help-image-wrapper');
+        if (helpImageWrap) {
+          if (data.contacthelpBgImage) {
+            helpImageWrap.style.backgroundImage = `url(${resolveMediaUrl(data.contacthelpBgImage)})`;
+            helpImageWrap.style.backgroundSize = 'cover';
+            helpImageWrap.style.backgroundPosition = 'center';
+          } else {
+            helpImageWrap.style.backgroundImage = '';
+          }
         }
+
+        // Contact cards
+        setImageSrc(document.getElementById('contact-card-1-icon'), data.ContactCard1Icon, '/assests/images/message.svg');
+        const card1Title = document.getElementById('contact-card-1-title');
+        const card1Desc = document.getElementById('contact-card-1-desc');
+        const card1Email = document.getElementById('contact-card-1-email');
+        if (card1Title) card1Title.textContent = data.ContactCard1Title || '';
+        if (card1Desc) card1Desc.textContent = data.ContactCard1Desc || '';
+        if (card1Email) {
+          if (data.ContactCard1Email) {
+            card1Email.innerHTML = `<a class="contact-card-email" href="mailto:${data.ContactCard1Email}">${data.ContactCard1Email}</a>`;
+          } else {
+            card1Email.textContent = '';
+          }
+        }
+
+        setImageSrc(document.getElementById('contact-card-2-icon'), data.ContactCard2Icon, '/assests/images/conatct.svg');
+        const card2Title = document.getElementById('contact-card-2-title');
+        const card2Desc = document.getElementById('contact-card-2-desc');
+        const card2Email = document.getElementById('contact-card-2-email');
+        if (card2Title) card2Title.textContent = data.ContactCard2Title || '';
+        if (card2Desc) card2Desc.textContent = data.ContactCard2Desc || '';
+        if (card2Email) {
+          if (data.ContactCard2Email) {
+            card2Email.innerHTML = `<a class="contact-card-email" href="mailto:${data.ContactCard2Email}">${data.ContactCard2Email}</a>`;
+          } else {
+            card2Email.textContent = '';
+          }
+        }
+
+        // Global presence
+        const globalBadgeEl = document.getElementById('contact-global-badge');
+        const globalTitleEl = document.getElementById('contact-global-title');
+        if (globalBadgeEl) globalBadgeEl.textContent = data.contactGlobalBadge || '';
+        if (globalTitleEl) globalTitleEl.textContent = data.contactGlobalTitle || '';
+        renderParagraphs(
+          document.getElementById('contact-global-paragraphs'),
+          data.contactGlobalParagraphs,
+          'cta-description-text contact'
+        );
       } catch (error) {
-        console.error('Failed to load dynamic about content:', error);
+        console.error('Failed to load dynamic contact content:', error);
       }
+    })();
+
+    // Submit contact form to backend
+    (function initContactFormSubmit() {
+      const form = document.getElementById('email-form-2');
+      if (!form) return;
+
+      const doneEl = form.parentElement.querySelector('.w-form-done');
+      const failEl = form.parentElement.querySelector('.w-form-fail');
+      const submitBtn = form.querySelector('.contact-us-form-submit-button');
+
+      function showDone() {
+        if (doneEl) doneEl.style.display = 'block';
+        if (failEl) failEl.style.display = 'none';
+        form.style.display = 'none';
+      }
+
+      function showFail(message) {
+        if (failEl) {
+          failEl.style.display = 'block';
+          const msg = failEl.querySelector('div');
+          if (msg) msg.textContent = message || 'Oops! Something went wrong while submitting the form.';
+        }
+        if (doneEl) doneEl.style.display = 'none';
+      }
+
+      function resetMessages() {
+        if (doneEl) doneEl.style.display = 'none';
+        if (failEl) failEl.style.display = 'none';
+        form.style.display = '';
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        resetMessages();
+
+        const fullName = document.getElementById('First-Name')?.value?.trim();
+        const email = document.getElementById('Your-Email')?.value?.trim();
+        const company = document.getElementById('Company')?.value?.trim() || '';
+        const inquirySelect = document.getElementById('Inquiry-Type');
+        const inquiryType = inquirySelect?.value
+          ? (inquirySelect.options[inquirySelect.selectedIndex]?.text || inquirySelect.value)
+          : '';
+        const message = document.getElementById('field')?.value?.trim();
+
+        if (!fullName || !email || !message) {
+          showFail('Please fill in all required fields.');
+          return;
+        }
+
+        const originalValue = submitBtn?.value;
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.value = submitBtn.getAttribute('data-wait') || 'Please wait...';
+        }
+
+        try {
+          const response = await fetch(INQUIRY_API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              fullName,
+              email,
+              company,
+              inquiryType,
+              message
+            })
+          });
+
+          const result = await response.json();
+
+          if (!response.ok || !result.success) {
+            throw new Error(result.error || 'Submission failed');
+          }
+
+          form.reset();
+          showDone();
+        } catch (err) {
+          console.error('Contact form submit error:', err);
+          showFail(err.message || 'Something went wrong. Please try again.');
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.value = originalValue || 'Submit Inquiry';
+          }
+        }
+      });
     })();
   </script>
    </body>
