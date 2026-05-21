@@ -3575,7 +3575,7 @@ figure {
 }
 
 .inner-box-two {
-     background-image: url(/assests/images/footerbg.svg);
+    background-image: url(/assests/images/footerbg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background: linear-gradient(180deg, #05040B 0%, #280000 100%); */
@@ -4689,7 +4689,7 @@ figure {
     width: 100%;
     max-width: 80px;
     height: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     display: flex;
     box-shadow: inset 0 2px 12px #ffffff42;
 }
@@ -10302,7 +10302,161 @@ figure {
     }
 }
 
+@media screen and (max-width: 1399px) {
+
+    .technology-card-wrapper.left {
+        flex: 0 auto;
+        justify-content: space-between;
+    }
+
+    .technology-card-wrapper.right {
+        border-left-style: solid;
+        border-left-color: #ffffff14;
+        flex: 0 auto;
+        justify-content: space-between;
+    }
+
+    .technology-card-typography {
+        grid-row-gap: 180px;
+        max-width: 420px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .technology-card-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .technology-card-image-wrapper.right-card-image,
+    .technology-card-image-wrapper.left-card-image {
+        min-height: auto;
+    }
+
+    .technology-card-image {
+        object-fit: cover;
+        flex: 0 auto;
+    }
+
+    .technology-card-image-single {
+        padding-right: 10px;
+    }
+
+    .about-us-gallery-image-wrapper {
+        grid-column-gap: 15px;
+        grid-row-gap: 16px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-columns: 1fr;
+        margin-bottom: 40px;
+        display: grid;
+    }
+
+    .about-us-gallery-image.middle {
+        max-width: 100%;
+    }
+
+    .community-spotlight-image {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .community-spotlight-image {
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-title-hv2 {
+        letter-spacing: -2px;
+        font-size: 72px;
+        line-height: 80px;
+    }
+
+    .banner-description-hv2-topheader {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .home-banner-button-wrapper {
+        gap: 15px;
+    }
+
+    .inner-button-wrap,
+    .primary-button {
+        font-size: 14px;
+    }
+
+    .inner-button-wrap,
+    .primary-button-wrap {
+        padding: 10px;
+    }
+
+    .technology-card-wrapper.left {
+        flex: 0 auto;
+        justify-content: space-between;
+    }
+
+    .technology-card-wrapper.right {
+        border-left-style: solid;
+        border-left-color: #ffffff14;
+        flex: 0 auto;
+        justify-content: space-between;
+    }
+
+    .technology-card-typography {
+        grid-row-gap: 180px;
+        max-width: 350px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .technology-card-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .technology-card-image-wrapper.right-card-image,
+    .technology-card-image-wrapper.left-card-image {
+        min-height: auto;
+    }
+
+    .technology-card-image {
+        object-fit: cover;
+        flex: 0 auto;
+    }
+
+    .technology-card-image-single {
+        padding-right: 10px;
+    }
+
+    .about-us-gallery-image-wrapper {
+        grid-column-gap: 15px;
+        grid-row-gap: 16px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-columns: 1fr;
+        margin-bottom: 40px;
+        display: grid;
+    }
+
+    .about-us-gallery-image.middle {
+        max-width: 100%;
+    }
+
+    .community-spotlight-image {
+        max-width: 80px;
+    }
+
+}
+
 @media screen and (max-width: 991px) {
+    .community-spotlight-image {
+        max-width: 75px;
+    }
+
     h1 {
         font-size: 72px;
         line-height: 82px;
@@ -10723,6 +10877,8 @@ figure {
         max-width: 100%;
         min-height: auto;
         padding: 30px 24px;
+
+        align-items: center;
     }
 
     .features-typography-card.top-border-none {
@@ -12359,14 +12515,15 @@ figure {
         flex-direction: column;
     }
 
-     .secont-bio{
+    .secont-bio {
         text-align: left;
     }
 
-    .about-owner-section.second  {
+    .about-owner-section.second {
         flex-direction: column-reverse;
     }
-        .about-owner-section img {
+
+    .about-owner-section img {
         max-height: 300px;
     }
 }
@@ -12438,7 +12595,7 @@ figure {
         /* padding-bottom: 80px; */
     }
 
-    
+
 
     .section.features-hv2 {
         padding-top: 80px;
@@ -14044,7 +14201,7 @@ figure {
         line-height: 42px;
     }
 
-    .secont-bio{
+    .secont-bio {
         text-align: left;
     }
 

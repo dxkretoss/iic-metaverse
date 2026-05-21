@@ -487,379 +487,6 @@ body {
     color: var(--colors--primary);
 }
 
-
-@media screen and (max-width: 991px) {
-    body {
-        --_sizing---border-radius--border-radius-xl: .875rem;
-        --_sizing---border-radius--border-radius-3xl: 1.25rem;
-        --_sizing---border-radius--border-radius-sm: .5rem;
-        --_sizing---border-radius--border-radius-2xl: 1rem;
-        --_sizing---border-radius--border-radius-lg: .75rem;
-        --_sizing---border-radius--border-radius-half: 50%;
-        --_sizing---border-radius--border-radius-md: .625rem;
-        --_sizing---border-radius--border-radius-4xl: 1.5rem;
-        --_sizing---border-radius--border-radius-full: 100%;
-        --_typography---font-family--primary-font: Inter, sans-serif;
-        --_typography---body-font-size--text-lg: 1.125rem;
-        --_typography---line-height--line-height-6xl: 155%;
-        --_typography---font-weight--regular: 400;
-        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
-        --_typography---heading-size--h1: 3.4rem;
-        --_typography---line-height--line-height-3xl: 125%;
-        --_typography---latter-spacing--latter-spacing-2xl: -.0531rem;
-        --_typography---heading-size--h2: 3.25rem;
-        --_typography---line-height--line-height-xl: 120%;
-        --_typography---latter-spacing--latter-spacing-xl: -.0531rem;
-        --_typography---heading-size--h3: 2.625rem;
-        --_typography---latter-spacing--latter-spacing-lg: -.035rem;
-        --_typography---heading-size--h4: 2rem;
-        --_typography---line-height--line-height-2xl: 122%;
-        --_typography---latter-spacing--latter-spacing-sm: -.0262rem;
-        --_typography---heading-size--h5: 1.75rem;
-        --_typography---heading-size--h6: 1.5rem;
-        --_typography---line-height--line-height-lg: 133.333%;
-        --_typography---font-weight--semi-bold: 600;
-        --_typography---font-weight--medium: 500;
-        --_typography---body-font-size--text-md: 1rem;
-        --_typography---line-height--line-height-5xl: 150%;
-        --_typography---body-font-size--text-xl: 1.25rem;
-        --_typography---body-font-size--text-sm: .875rem;
-        --_typography---line-height--line-height-4xl: 142.857%;
-        --_typography---body-font-size--text-xs: .75rem;
-        --_typography---line-height--line-height-sm: 100%;
-        --_typography---font-weight--bold: 700;
-        --_spacing---space-none: 0px;
-        --_spacing---space-none-lg: .5rem;
-        --_spacing---space-none-3xl: .875rem;
-        --_spacing---space-none-2xl: .75rem;
-        --_spacing---space-none-xl: .625rem;
-        --_spacing---space-none-sm: .25rem;
-        --_spacing---space-none-4xl: 1rem;
-        --_spacing---space-none-5xl: 1.125rem;
-        --_spacing---space-none-8xl: 1.875rem;
-        --_spacing---space-none-20xl: 12rem;
-        --_spacing---space-none-19xl: 8.75rem;
-        --_spacing---space-none-17xl: 5.625rem;
-        --_spacing---space-none-18xl: 6.25rem;
-        --_spacing---space-none-15xl: 4.375rem;
-        --_spacing---space-none-16xl: 4.375rem;
-        --_spacing---space-none-12xl: 2.5rem;
-        --_spacing---space-none-7xl: 1.5rem;
-        --_spacing---space-none-6xl: 1.25rem;
-        --_spacing---space-none-11xl: 2.5rem;
-        --_spacing---space-none-10xl: 2rem;
-        --_spacing---space-none-md: .375rem;
-        --_spacing---space-none-9xl: 1.875rem;
-        --_spacing---space-none-13xl: 3.125rem;
-        --_spacing---space-none-14xl: 3.375rem;
-    }
-
-    .security-wrapper.top {
-        max-width: 24.4rem;
-    }
-
-    .security-card-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .security-main-wrapper {
-        height: auto;
-    }
-
-    .security-main-wrap {
-        position: static;
-    }
-
-    .footer {
-        padding-right: var(--_spacing---space-none-4xl);
-        padding-bottom: var(--_spacing---space-none-6xl);
-        padding-left: var(--_spacing---space-none-4xl);
-    }
-
-    .footer-wrapper {
-        padding-top: 4rem;
-        padding-bottom: 15rem;
-    }
-
-    .footer-content.grid {
-        grid-row-gap: var(--_spacing---space-none-6xl);
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-content.bottom-grid {
-        grid-row-gap: var(--_spacing---space-none-6xl);
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-subscribe-field {
-        border-radius: var(--_sizing---border-radius--border-radius-sm);
-    }
-
-    .footer-text {
-        max-height: 16rem;
-    }
-
-    .footer-line-wrap {
-        display: none;
-    }
-
-    .footer-border-wrap {
-        border-right-style: none;
-        min-height: 13rem;
-    }
-
-    .footer-border-wrap.first-item {
-        border: 1px #000;
-    }
-
-    .footer-border-wrap.v2 {
-        min-height: 2rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    body {
-        --_sizing---border-radius--border-radius-xl: .75rem;
-        --_sizing---border-radius--border-radius-3xl: 1rem;
-        --_sizing---border-radius--border-radius-sm: .5rem;
-        --_sizing---border-radius--border-radius-2xl: .875rem;
-        --_sizing---border-radius--border-radius-lg: .75rem;
-        --_sizing---border-radius--border-radius-half: 50%;
-        --_sizing---border-radius--border-radius-md: .625rem;
-        --_sizing---border-radius--border-radius-4xl: 1rem;
-        --_sizing---border-radius--border-radius-full: 100%;
-        --_typography---font-family--primary-font: Inter, sans-serif;
-        --_typography---body-font-size--text-lg: 1.125rem;
-        --_typography---line-height--line-height-6xl: 155%;
-        --_typography---font-weight--regular: 400;
-        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
-        --_typography---heading-size--h1: 3rem;
-        --_typography---line-height--line-height-3xl: 125%;
-        --_typography---latter-spacing--latter-spacing-2xl: -.0281rem;
-        --_typography---heading-size--h2: 2.625rem;
-        --_typography---line-height--line-height-xl: 120%;
-        --_typography---latter-spacing--latter-spacing-xl: -.0275rem;
-        --_typography---heading-size--h3: 2rem;
-        --_typography---latter-spacing--latter-spacing-lg: -.0163rem;
-        --_typography---heading-size--h4: 1.75rem;
-        --_typography---line-height--line-height-2xl: 122%;
-        --_typography---latter-spacing--latter-spacing-sm: -.0138rem;
-        --_typography---heading-size--h5: 1.625rem;
-        --_typography---heading-size--h6: 1.375rem;
-        --_typography---line-height--line-height-lg: 133.333%;
-        --_typography---font-weight--semi-bold: 600;
-        --_typography---font-weight--medium: 500;
-        --_typography---body-font-size--text-md: 1rem;
-        --_typography---line-height--line-height-5xl: 150%;
-        --_typography---body-font-size--text-xl: 1.125rem;
-        --_typography---body-font-size--text-sm: .875rem;
-        --_typography---line-height--line-height-4xl: 142.857%;
-        --_typography---body-font-size--text-xs: .75rem;
-        --_typography---line-height--line-height-sm: 100%;
-        --_typography---font-weight--bold: 700;
-        --_spacing---space-none: 0px;
-        --_spacing---space-none-lg: .5rem;
-        --_spacing---space-none-3xl: .875rem;
-        --_spacing---space-none-2xl: .75rem;
-        --_spacing---space-none-xl: .625rem;
-        --_spacing---space-none-sm: .25rem;
-        --_spacing---space-none-4xl: 1rem;
-        --_spacing---space-none-5xl: 1.125rem;
-        --_spacing---space-none-8xl: 1.625rem;
-        --_spacing---space-none-20xl: 10rem;
-        --_spacing---space-none-19xl: 7.5rem;
-        --_spacing---space-none-17xl: 5rem;
-        --_spacing---space-none-18xl: 5rem;
-        --_spacing---space-none-15xl: 3.75rem;
-        --_spacing---space-none-16xl: 3.75rem;
-        --_spacing---space-none-12xl: 2.75rem;
-        --_spacing---space-none-7xl: 1.5rem;
-        --_spacing---space-none-6xl: 1.25rem;
-        --_spacing---space-none-11xl: 2.75rem;
-        --_spacing---space-none-10xl: 1.875rem;
-        --_spacing---space-none-md: .375rem;
-        --_spacing---space-none-9xl: 1.75rem;
-        --_spacing---space-none-13xl: 2.75rem;
-        --_spacing---space-none-14xl: 3.25rem;
-    }
-
-    .security-content-icon-wrap {
-        width: 4rem;
-        height: 4rem;
-        margin-bottom: 2rem;
-    }
-
-    .footer {
-        padding-top: 40px;
-    }
-
-    .security-card {
-        padding: var(--_spacing---space-none-8xl) var(--_spacing---space-none-4xl);
-        grid-column-gap: var(--_spacing---space-none-9xl);
-        grid-row-gap: var(--_spacing---space-none-9xl);
-    }
-
-    .security-card-img {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .footer-wrapper {
-        padding-top: 2rem;
-        padding-bottom: 8.5rem;
-    }
-
-    .footer-wrap {
-        margin-right: var(--_spacing---space-none);
-    }
-
-    .footer-content.grid {
-        padding-right: var(--_spacing---space-none);
-        padding-left: var(--_spacing---space-none);
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .footer-content.bottom-grid {
-        padding-right: var(--_spacing---space-none);
-        padding-left: var(--_spacing---space-none);
-        flex-flow: column;
-        grid-template-columns: 1fr;
-        justify-content: flex-start;
-        align-items: center;
-        display: flex;
-    }
-
-    .footer-subscribe-field {
-        padding-left: var(--_spacing---space-none-xl);
-    }
-
-    .footer-menu-wrap.flex {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .footer-text {
-        object-fit: cover;
-        max-height: 10rem;
-    }
-
-    .footer-line-wrap {
-        display: none;
-    }
-
-    .footer-inner-wrap {
-        padding-right: var(--_spacing---space-none);
-        padding-left: var(--_spacing---space-none);
-    }
-
-    .footer-border-wrap {
-        padding-right: var(--_spacing---space-none);
-        text-align: left;
-        border-right-style: none;
-        min-height: auto;
-    }
-
-    .footer-border-wrap.first-item {
-        padding-right: var(--_spacing---space-none);
-        padding-left: var(--_spacing---space-none);
-        border-left-style: none;
-    }
-
-    .footer-border-wrap.v2 {
-        min-height: auto;
-    }
-
-}
-
-@media screen and (max-width: 479px) {
-    body {
-        --_sizing---border-radius--border-radius-xl: .625rem;
-        --_sizing---border-radius--border-radius-3xl: .875rem;
-        --_sizing---border-radius--border-radius-sm: .5rem;
-        --_sizing---border-radius--border-radius-2xl: .625rem;
-        --_sizing---border-radius--border-radius-lg: 7.5rem;
-        --_sizing---border-radius--border-radius-half: 50%;
-        --_sizing---border-radius--border-radius-md: .625rem;
-        --_sizing---border-radius--border-radius-4xl: .875rem;
-        --_sizing---border-radius--border-radius-full: 100%;
-        --_typography---font-family--primary-font: Inter, sans-serif;
-        --_typography---body-font-size--text-lg: 1rem;
-        --_typography---line-height--line-height-6xl: 155%;
-        --_typography---font-weight--regular: 400;
-        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
-        --_typography---heading-size--h1: 2.375rem;
-        --_typography---line-height--line-height-3xl: 125%;
-        --_typography---latter-spacing--latter-spacing-2xl: -.0138rem;
-        --_typography---heading-size--h2: 2rem;
-        --_typography---line-height--line-height-xl: 120%;
-        --_typography---latter-spacing--latter-spacing-xl: -.0138rem;
-        --_typography---heading-size--h3: 1.75rem;
-        --_typography---latter-spacing--latter-spacing-lg: -.0088rem;
-        --_typography---heading-size--h4: 1.625rem;
-        --_typography---line-height--line-height-2xl: 122%;
-        --_typography---latter-spacing--latter-spacing-sm: -.0069rem;
-        --_typography---heading-size--h5: 1.5rem;
-        --_typography---heading-size--h6: 1.25rem;
-        --_typography---line-height--line-height-lg: 133.333%;
-        --_typography---font-weight--semi-bold: 600;
-        --_typography---font-weight--medium: 500;
-        --_typography---body-font-size--text-md: 1rem;
-        --_typography---line-height--line-height-5xl: 150%;
-        --_typography---body-font-size--text-xl: 1rem;
-        --_typography---body-font-size--text-sm: .875rem;
-        --_typography---line-height--line-height-4xl: 142.857%;
-        --_typography---body-font-size--text-xs: .75rem;
-        --_typography---line-height--line-height-sm: 100%;
-        --_typography---font-weight--bold: 700;
-        --_spacing---space-none: 0px;
-        --_spacing---space-none-lg: .5rem;
-        --_spacing---space-none-3xl: .875rem;
-        --_spacing---space-none-2xl: .75rem;
-        --_spacing---space-none-xl: .625rem;
-        --_spacing---space-none-sm: .25rem;
-        --_spacing---space-none-4xl: 1rem;
-        --_spacing---space-none-5xl: 1rem;
-        --_spacing---space-none-8xl: 1.5rem;
-        --_spacing---space-none-20xl: 9rem;
-        --_spacing---space-none-19xl: 6.25rem;
-        --_spacing---space-none-17xl: 3.75rem;
-        --_spacing---space-none-18xl: 3.75rem;
-        --_spacing---space-none-15xl: 3.125rem;
-        --_spacing---space-none-16xl: 3.125rem;
-        --_spacing---space-none-12xl: 1.875rem;
-        --_spacing---space-none-7xl: 1.25rem;
-        --_spacing---space-none-6xl: 1.25rem;
-        --_spacing---space-none-11xl: 1.875rem;
-        --_spacing---space-none-10xl: 1.75rem;
-        --_spacing---space-none-md: .375rem;
-        --_spacing---space-none-9xl: 1.625rem;
-        --_spacing---space-none-13xl: 2.5rem;
-        --_spacing---space-none-14xl: 2.625rem;
-    }
-
-    .footer-wrapper {
-        padding-bottom: 3.7rem;
-    }
-
-    .footer-content.grid {
-        grid-row-gap: var(--_spacing---space-none-12xl);
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content.bottom-grid {
-        grid-row-gap: var(--_spacing---space-none-4xl);
-    }
-
-    .footer-text {
-        max-height: 6rem;
-    }
-
-    .footer-border-wrap.v2 {
-        text-align: center;
-    }
-
-}
-
 .scroll-section {
     height: 300vh;
     position: relative;
@@ -1267,6 +894,59 @@ body {
     transform: scale(1.15) rotate(8deg);
 }
 
+
+
+@media screen and (max-width: 479px) {
+    .features-hv2 .card p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .features-hv2 .scroll-section {
+        height: auto !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .features-hv2 .sticky-box {
+        position: static !important;
+        height: auto !important;
+    }
+
+    .features-hv2 .cards-wrap {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: static;
+    }
+
+    .features-hv2 .cards-wrap.token-economy {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features-hv2 .card {
+        position: static;
+        transform: none !important;
+        width: 100%;
+        max-width: none;
+    }
+
+    .features-hv2 .card:hover {
+        transform: scale(1.02) !important;
+    }
+
+
+}
+
 @media screen and (max-width: 991px) {
     .features-hv2 .scroll-section {
         height: auto !important;
@@ -1356,9 +1036,375 @@ body {
     }
 }
 
-@media screen and (max-width: 479px) {
-    .features-hv2 .card p {
-        font-size: 18px;
-        line-height: 28px;
+
+@media screen and (max-width: 991px) {
+    body {
+        --_sizing---border-radius--border-radius-xl: .875rem;
+        --_sizing---border-radius--border-radius-3xl: 1.25rem;
+        --_sizing---border-radius--border-radius-sm: .5rem;
+        --_sizing---border-radius--border-radius-2xl: 1rem;
+        --_sizing---border-radius--border-radius-lg: .75rem;
+        --_sizing---border-radius--border-radius-half: 50%;
+        --_sizing---border-radius--border-radius-md: .625rem;
+        --_sizing---border-radius--border-radius-4xl: 1.5rem;
+        --_sizing---border-radius--border-radius-full: 100%;
+        --_typography---font-family--primary-font: Inter, sans-serif;
+        --_typography---body-font-size--text-lg: 1.125rem;
+        --_typography---line-height--line-height-6xl: 155%;
+        --_typography---font-weight--regular: 400;
+        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
+        --_typography---heading-size--h1: 3.4rem;
+        --_typography---line-height--line-height-3xl: 125%;
+        --_typography---latter-spacing--latter-spacing-2xl: -.0531rem;
+        --_typography---heading-size--h2: 3.25rem;
+        --_typography---line-height--line-height-xl: 120%;
+        --_typography---latter-spacing--latter-spacing-xl: -.0531rem;
+        --_typography---heading-size--h3: 2.625rem;
+        --_typography---latter-spacing--latter-spacing-lg: -.035rem;
+        --_typography---heading-size--h4: 2rem;
+        --_typography---line-height--line-height-2xl: 122%;
+        --_typography---latter-spacing--latter-spacing-sm: -.0262rem;
+        --_typography---heading-size--h5: 1.75rem;
+        --_typography---heading-size--h6: 1.5rem;
+        --_typography---line-height--line-height-lg: 133.333%;
+        --_typography---font-weight--semi-bold: 600;
+        --_typography---font-weight--medium: 500;
+        --_typography---body-font-size--text-md: 1rem;
+        --_typography---line-height--line-height-5xl: 150%;
+        --_typography---body-font-size--text-xl: 1.25rem;
+        --_typography---body-font-size--text-sm: .875rem;
+        --_typography---line-height--line-height-4xl: 142.857%;
+        --_typography---body-font-size--text-xs: .75rem;
+        --_typography---line-height--line-height-sm: 100%;
+        --_typography---font-weight--bold: 700;
+        --_spacing---space-none: 0px;
+        --_spacing---space-none-lg: .5rem;
+        --_spacing---space-none-3xl: .875rem;
+        --_spacing---space-none-2xl: .75rem;
+        --_spacing---space-none-xl: .625rem;
+        --_spacing---space-none-sm: .25rem;
+        --_spacing---space-none-4xl: 1rem;
+        --_spacing---space-none-5xl: 1.125rem;
+        --_spacing---space-none-8xl: 1.875rem;
+        --_spacing---space-none-20xl: 12rem;
+        --_spacing---space-none-19xl: 8.75rem;
+        --_spacing---space-none-17xl: 5.625rem;
+        --_spacing---space-none-18xl: 6.25rem;
+        --_spacing---space-none-15xl: 4.375rem;
+        --_spacing---space-none-16xl: 4.375rem;
+        --_spacing---space-none-12xl: 2.5rem;
+        --_spacing---space-none-7xl: 1.5rem;
+        --_spacing---space-none-6xl: 1.25rem;
+        --_spacing---space-none-11xl: 2.5rem;
+        --_spacing---space-none-10xl: 2rem;
+        --_spacing---space-none-md: .375rem;
+        --_spacing---space-none-9xl: 1.875rem;
+        --_spacing---space-none-13xl: 3.125rem;
+        --_spacing---space-none-14xl: 3.375rem;
     }
+
+    .security-wrapper.top {
+        max-width: 24.4rem;
+    }
+
+    .security-card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .security-main-wrapper {
+        height: auto;
+    }
+
+    .security-main-wrap {
+        position: static;
+    }
+
+    .footer {
+        padding-right: var(--_spacing---space-none-4xl);
+        padding-bottom: var(--_spacing---space-none-6xl);
+        padding-left: var(--_spacing---space-none-4xl);
+    }
+
+    .footer-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 15rem;
+    }
+
+    .footer-content.grid {
+        grid-row-gap: var(--_spacing---space-none-6xl);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content.bottom-grid {
+        grid-row-gap: var(--_spacing---space-none-6xl);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-subscribe-field {
+        border-radius: var(--_sizing---border-radius--border-radius-sm);
+    }
+
+    .footer-text {
+        max-height: 16rem;
+    }
+
+    .footer-line-wrap {
+        display: none;
+    }
+
+    .footer-border-wrap {
+        border-right-style: none;
+        min-height: 13rem;
+    }
+
+    .footer-border-wrap.first-item {
+        border: 1px #000;
+    }
+
+    .footer-border-wrap.v2 {
+        min-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        --_sizing---border-radius--border-radius-xl: .75rem;
+        --_sizing---border-radius--border-radius-3xl: 1rem;
+        --_sizing---border-radius--border-radius-sm: .5rem;
+        --_sizing---border-radius--border-radius-2xl: .875rem;
+        --_sizing---border-radius--border-radius-lg: .75rem;
+        --_sizing---border-radius--border-radius-half: 50%;
+        --_sizing---border-radius--border-radius-md: .625rem;
+        --_sizing---border-radius--border-radius-4xl: 1rem;
+        --_sizing---border-radius--border-radius-full: 100%;
+        --_typography---font-family--primary-font: Inter, sans-serif;
+        --_typography---body-font-size--text-lg: 1.125rem;
+        --_typography---line-height--line-height-6xl: 155%;
+        --_typography---font-weight--regular: 400;
+        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
+        --_typography---heading-size--h1: 3rem;
+        --_typography---line-height--line-height-3xl: 125%;
+        --_typography---latter-spacing--latter-spacing-2xl: -.0281rem;
+        --_typography---heading-size--h2: 2.625rem;
+        --_typography---line-height--line-height-xl: 120%;
+        --_typography---latter-spacing--latter-spacing-xl: -.0275rem;
+        --_typography---heading-size--h3: 2rem;
+        --_typography---latter-spacing--latter-spacing-lg: -.0163rem;
+        --_typography---heading-size--h4: 1.75rem;
+        --_typography---line-height--line-height-2xl: 122%;
+        --_typography---latter-spacing--latter-spacing-sm: -.0138rem;
+        --_typography---heading-size--h5: 1.625rem;
+        --_typography---heading-size--h6: 1.375rem;
+        --_typography---line-height--line-height-lg: 133.333%;
+        --_typography---font-weight--semi-bold: 600;
+        --_typography---font-weight--medium: 500;
+        --_typography---body-font-size--text-md: 1rem;
+        --_typography---line-height--line-height-5xl: 150%;
+        --_typography---body-font-size--text-xl: 1.125rem;
+        --_typography---body-font-size--text-sm: .875rem;
+        --_typography---line-height--line-height-4xl: 142.857%;
+        --_typography---body-font-size--text-xs: .75rem;
+        --_typography---line-height--line-height-sm: 100%;
+        --_typography---font-weight--bold: 700;
+        --_spacing---space-none: 0px;
+        --_spacing---space-none-lg: .5rem;
+        --_spacing---space-none-3xl: .875rem;
+        --_spacing---space-none-2xl: .75rem;
+        --_spacing---space-none-xl: .625rem;
+        --_spacing---space-none-sm: .25rem;
+        --_spacing---space-none-4xl: 1rem;
+        --_spacing---space-none-5xl: 1.125rem;
+        --_spacing---space-none-8xl: 1.625rem;
+        --_spacing---space-none-20xl: 10rem;
+        --_spacing---space-none-19xl: 7.5rem;
+        --_spacing---space-none-17xl: 5rem;
+        --_spacing---space-none-18xl: 5rem;
+        --_spacing---space-none-15xl: 3.75rem;
+        --_spacing---space-none-16xl: 3.75rem;
+        --_spacing---space-none-12xl: 2.75rem;
+        --_spacing---space-none-7xl: 1.5rem;
+        --_spacing---space-none-6xl: 1.25rem;
+        --_spacing---space-none-11xl: 2.75rem;
+        --_spacing---space-none-10xl: 1.875rem;
+        --_spacing---space-none-md: .375rem;
+        --_spacing---space-none-9xl: 1.75rem;
+        --_spacing---space-none-13xl: 2.75rem;
+        --_spacing---space-none-14xl: 3.25rem;
+    }
+
+    .security-content-icon-wrap {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+
+    .security-card {
+        padding: var(--_spacing---space-none-8xl) var(--_spacing---space-none-4xl);
+        grid-column-gap: var(--_spacing---space-none-9xl);
+        grid-row-gap: var(--_spacing---space-none-9xl);
+    }
+
+    .security-card-img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .footer-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 8.5rem;
+    }
+
+    .footer-wrap {
+        margin-right: var(--_spacing---space-none);
+    }
+
+    .footer-content.grid {
+        padding-right: var(--_spacing---space-none);
+        padding-left: var(--_spacing---space-none);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-content.bottom-grid {
+        padding-right: var(--_spacing---space-none);
+        padding-left: var(--_spacing---space-none);
+        flex-flow: column;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer-subscribe-field {
+        padding-left: var(--_spacing---space-none-xl);
+    }
+
+    .footer-menu-wrap.flex {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-text {
+        object-fit: cover;
+        max-height: 10rem;
+    }
+
+    .footer-line-wrap {
+        display: none;
+    }
+
+    .footer-inner-wrap {
+        padding-right: var(--_spacing---space-none);
+        padding-left: var(--_spacing---space-none);
+    }
+
+    .footer-border-wrap {
+        padding-right: var(--_spacing---space-none);
+        text-align: left;
+        border-right-style: none;
+        min-height: auto;
+    }
+
+    .footer-border-wrap.first-item {
+        padding-right: var(--_spacing---space-none);
+        padding-left: var(--_spacing---space-none);
+        border-left-style: none;
+    }
+
+    .footer-border-wrap.v2 {
+        min-height: auto;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        --_sizing---border-radius--border-radius-xl: .625rem;
+        --_sizing---border-radius--border-radius-3xl: .875rem;
+        --_sizing---border-radius--border-radius-sm: .5rem;
+        --_sizing---border-radius--border-radius-2xl: .625rem;
+        --_sizing---border-radius--border-radius-lg: 7.5rem;
+        --_sizing---border-radius--border-radius-half: 50%;
+        --_sizing---border-radius--border-radius-md: .625rem;
+        --_sizing---border-radius--border-radius-4xl: .875rem;
+        --_sizing---border-radius--border-radius-full: 100%;
+        --_typography---font-family--primary-font: Inter, sans-serif;
+        --_typography---body-font-size--text-lg: 1rem;
+        --_typography---line-height--line-height-6xl: 155%;
+        --_typography---font-weight--regular: 400;
+        --_typography---font-family--secondary-font: "Cal Sans", sans-serif;
+        --_typography---heading-size--h1: 2.375rem;
+        --_typography---line-height--line-height-3xl: 125%;
+        --_typography---latter-spacing--latter-spacing-2xl: -.0138rem;
+        --_typography---heading-size--h2: 2rem;
+        --_typography---line-height--line-height-xl: 120%;
+        --_typography---latter-spacing--latter-spacing-xl: -.0138rem;
+        --_typography---heading-size--h3: 1.75rem;
+        --_typography---latter-spacing--latter-spacing-lg: -.0088rem;
+        --_typography---heading-size--h4: 1.625rem;
+        --_typography---line-height--line-height-2xl: 122%;
+        --_typography---latter-spacing--latter-spacing-sm: -.0069rem;
+        --_typography---heading-size--h5: 1.5rem;
+        --_typography---heading-size--h6: 1.25rem;
+        --_typography---line-height--line-height-lg: 133.333%;
+        --_typography---font-weight--semi-bold: 600;
+        --_typography---font-weight--medium: 500;
+        --_typography---body-font-size--text-md: 1rem;
+        --_typography---line-height--line-height-5xl: 150%;
+        --_typography---body-font-size--text-xl: 1rem;
+        --_typography---body-font-size--text-sm: .875rem;
+        --_typography---line-height--line-height-4xl: 142.857%;
+        --_typography---body-font-size--text-xs: .75rem;
+        --_typography---line-height--line-height-sm: 100%;
+        --_typography---font-weight--bold: 700;
+        --_spacing---space-none: 0px;
+        --_spacing---space-none-lg: .5rem;
+        --_spacing---space-none-3xl: .875rem;
+        --_spacing---space-none-2xl: .75rem;
+        --_spacing---space-none-xl: .625rem;
+        --_spacing---space-none-sm: .25rem;
+        --_spacing---space-none-4xl: 1rem;
+        --_spacing---space-none-5xl: 1rem;
+        --_spacing---space-none-8xl: 1.5rem;
+        --_spacing---space-none-20xl: 9rem;
+        --_spacing---space-none-19xl: 6.25rem;
+        --_spacing---space-none-17xl: 3.75rem;
+        --_spacing---space-none-18xl: 3.75rem;
+        --_spacing---space-none-15xl: 3.125rem;
+        --_spacing---space-none-16xl: 3.125rem;
+        --_spacing---space-none-12xl: 1.875rem;
+        --_spacing---space-none-7xl: 1.25rem;
+        --_spacing---space-none-6xl: 1.25rem;
+        --_spacing---space-none-11xl: 1.875rem;
+        --_spacing---space-none-10xl: 1.75rem;
+        --_spacing---space-none-md: .375rem;
+        --_spacing---space-none-9xl: 1.625rem;
+        --_spacing---space-none-13xl: 2.5rem;
+        --_spacing---space-none-14xl: 2.625rem;
+    }
+
+    .footer-wrapper {
+        padding-bottom: 3.7rem;
+    }
+
+    .footer-content.grid {
+        grid-row-gap: var(--_spacing---space-none-12xl);
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content.bottom-grid {
+        grid-row-gap: var(--_spacing---space-none-4xl);
+    }
+
+    .footer-text {
+        max-height: 6rem;
+    }
+
+    .footer-border-wrap.v2 {
+        text-align: center;
+    }
+
 }
