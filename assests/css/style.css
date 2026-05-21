@@ -12862,6 +12862,10 @@ figure {
         flex-direction: column;
     }
 
+    .dual-section-bottom-text {
+        margin-bottom: 15px;
+    }
+
     .secont-bio {
         text-align: left;
     }
