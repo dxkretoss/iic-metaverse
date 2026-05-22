@@ -3639,7 +3639,11 @@ figure {
 
 .primary-button-hover-text {
     position: absolute;
-    /* margin-left: -30px; */
+    margin-left: -30px;
+}
+
+.navbar-button{
+     margin-left: 0;
 }
 
 .line {
