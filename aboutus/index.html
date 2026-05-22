@@ -277,7 +277,7 @@
     </section>
    
 
-       <section class="section community-spotlight">
+    <section class="section community-spotlight">
       <div data-w-id="7436af0c-4104-52c0-12c7-24cd299651a4" class="community-spotlight-content">
         <div class="community-spotlight-typography">
           <div class="community-spotlight-icon-wrapper">
@@ -298,9 +298,8 @@
                   class="primary-button w-inline-block">
                   <div>
                     <div class="primary-button-wrap">
-                      <div class="primary-button-text">Contact Us</div>
-                      <div class="primary-button-hover-text">Contact Us
-                      </div>
+                      <div class="primary-button-text" id="spotlight-primary-btn-text"></div>
+                      <div class="primary-button-hover-text" id="spotlight-primary-btn-hover-text"></div>
                       <div class="inner-button-star-wrap"><img loading="lazy"
                           src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67f2c29078a391bb6a44d572_inner-button-star-1.svg"
                           alt="" class="inner-button-star _1" /><img loading="lazy"
@@ -629,7 +628,7 @@
   <script>
     // Dynamically load about page content from Express/MongoDB server
     (async function loadDynamicAboutContent() {
-      const API_URL = 'http://localhost:5000/api/content/about';
+      const API_URL = 'http://localhost:5000/api/about';
       const BACKEND_URL = 'http://localhost:5000';
       try {
         const response = await fetch(API_URL);
