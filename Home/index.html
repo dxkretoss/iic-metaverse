@@ -2,7 +2,6 @@
 <html data-wf-domain="metaverse" data-wf-page="67d92c4842d210e660afb950" data-wf-site="67d5482886ed2b38b65e6d7c"
     data-wf-status="1" lang="en">
 
-
 <head>
     <meta charset="utf-8" />
     <title>IIC-Metaverse</title>
@@ -123,7 +122,7 @@
                                         </div>
                                         <div class="home-banner-button-wrapper">
                                             <div class="primary-button-wrapper desktop">
-                                                <a href="#" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
+                                                <a href="#" id="hero-primary-btn-link" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
                                                     class="primary-button w-inline-block">
                                                     <div class="primary-button-border-wrap">
                                                         <div class="primary-button-wrap">
@@ -166,7 +165,7 @@
                                             </div>
                                             <div class="banner-hv2-button-wrapper">
                                                 <div class="primary-button-wrapper">
-                                                    <a href="#" class="inner-button w-inline-block">
+                                                    <a href="#" id="hero-secondary-btn-link" class="inner-button w-inline-block">
                                                         <div class="primary-button-border-wrap">
                                                             <div class="inner-button-wrap">
                                                                 <div class="inner-button-text-wrap">
@@ -256,8 +255,8 @@
                                                             loading="lazy" alt=""
                                                             class="banner-world-element-tag-flag" />
                                                     </div>
-                                                    <img src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d686a9c62f330473ab43e8_Banner%20Single%20Element.webp"
-                                                        loading="lazy" alt="" class="banner-single-element" />
+                                                    <!-- <img src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d686a9c62f330473ab43e8_Banner%20Single%20Element.webp"
+                                                        loading="lazy" alt="" class="banner-single-element" /> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -380,8 +379,10 @@
                                     <h3 class="core-features-hv2-card-title" id="feature-title-0"></h3>
                                 </div>
                             </div>
-                            <div class="core-features-hv2-card-image-wrapper"><img src="" loading="lazy" alt=""
-                                    class="core-features-hv2-card-img" id="feature-img-0" /></div>
+                            <div class="core-features-hv2-card-image-wrapper">
+                                <img src="" loading="lazy" alt=""
+                                    class="core-features-hv2-card-img" id="feature-img-0" />
+                                </div>
                             <img src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
                                 loading="lazy" alt="" class="cta-top-left-element" /><img
                                 src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e6111e29720527a042_CTA%20Top%20Right%20Element.svg"
@@ -1336,16 +1337,20 @@
                     const heroTitleEl = document.getElementById('hero-title');
                     const heroDescEl = document.getElementById('hero-desc');
                     const heroPrimaryBtnEl = document.getElementById('hero-primary-btn-text');
+                    const heroPrimaryBtnLink = document.getElementById('hero-primary-btn-link');
                     const heroPrimaryBtnHoverEl = document.getElementById('hero-primary-btn-hover-text');
                     const heroSecondaryBtnEl = document.getElementById('hero-secondary-btn-text');
+                    const heroSecondaryBtnLink = document.getElementById('hero-secondary-btn-link');
                     const heroSecondaryBtnHoverEl = document.getElementById('hero-secondary-btn-hover-text');
 
                     if (heroTopHeaderEl && data.heroTopHeader) heroTopHeaderEl.textContent = data.heroTopHeader;
                     if (heroTitleEl && data.heroTitle) heroTitleEl.textContent = data.heroTitle;
                     if (heroDescEl && data.heroDescription) heroDescEl.textContent = data.heroDescription;
                     if (heroPrimaryBtnEl && data.heroPrimaryBtnText) heroPrimaryBtnEl.textContent = data.heroPrimaryBtnText;
+                    if (heroPrimaryBtnLink && data.heroPrimaryBtnLink) heroPrimaryBtnLink.href = data.heroPrimaryBtnLink;
                     if (heroPrimaryBtnHoverEl && data.heroPrimaryBtnText) heroPrimaryBtnHoverEl.textContent = data.heroPrimaryBtnText;
                     if (heroSecondaryBtnEl && data.heroSecondaryBtnText) heroSecondaryBtnEl.textContent = data.heroSecondaryBtnText;
+                    if (heroSecondaryBtnLink && data.heroSecondaryBtnLink) heroSecondaryBtnLink.href = data.heroSecondaryBtnLink;
                     if (heroSecondaryBtnHoverEl && data.heroSecondaryBtnText) heroSecondaryBtnHoverEl.textContent = data.heroSecondaryBtnText;
 
                     // 2. Featured Coins (Images, Titles, Prices)
