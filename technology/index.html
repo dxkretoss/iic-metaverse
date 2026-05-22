@@ -397,7 +397,7 @@
                 loading="lazy" alt="" class="features-card-shape-bottom-right" />
             </div>
             <div class="features-card-image-wrapper">
-              <img src="/assests/images/smart-contract-automation.svg" loading="lazy" style="opacity:0"
+              <img id="smart-contract-automation-img" src="/assests/images/smart-contract-automation.svg" loading="lazy" style="opacity:0"
                 data-w-id="11fd1aad-2867-06d2-cf81-c01c4da43d25" alt="" class="features-card-image three" />
             </div>
           </div>
@@ -655,10 +655,10 @@
             <div class="w-layout-grid features-hv2-grid">
               <div class="solving-card">
                 <div class="solving-card-icon-wrapper">
-                  <img src="/assests/images/time.svg" loading="lazy" alt="" class="solving-card-icon" />
+                  <img id="tech-transparency-c1-img" src="/assests/images/time.svg" loading="lazy" alt="" class="solving-card-icon" />
                 </div>
                 <div class="solving-card-title-description">
-                  <p class="solving-card-description-text">Real-time transaction tracking </p>
+                  <p class="solving-card-description-text" id="tech-transparency-c1-desc"></p>
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -668,10 +668,10 @@
               </div>
               <div class="solving-card">
                 <div class="solving-card-icon-wrapper">
-                  <img src="/assests/images/fee.svg" loading="lazy" alt="" class="solving-card-icon" />
+                  <img id="tech-transparency-c2-img" src="/assests/images/fee.svg" loading="lazy" alt="" class="solving-card-icon" />
                 </div>
                 <div class="solving-card-title-description">
-                  <p class="solving-card-description-text">Gas fee visibility</p>
+                  <p class="solving-card-description-text" id="tech-transparency-c2-desc"></p>
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -681,10 +681,10 @@
               </div>
               <div class="solving-card">
                 <div class="solving-card-icon-wrapper">
-                  <img src="/assests/images/wallet.svg" loading="lazy" alt="" class="solving-card-icon" />
+                  <img id="tech-transparency-c3-img" src="/assests/images/wallet.svg" loading="lazy" alt="" class="solving-card-icon" />
                 </div>
                 <div class="solving-card-title-description">
-                  <p class="solving-card-description-text">Wallet activity monitoring</p>
+                  <p class="solving-card-description-text" id="tech-transparency-c3-desc"></p>
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -694,10 +694,10 @@
               </div>
               <div class="solving-card">
                 <div class="solving-card-icon-wrapper">
-                  <img src="/assests/images/Independent-icon.svg" loading="lazy" alt="" class="solving-card-icon" />
+                  <img id="tech-transparency-c4-img" src="/assests/images/Independent-icon.svg" loading="lazy" alt="" class="solving-card-icon" />
                 </div>
                 <div class="solving-card-title-description">
-                  <p class="solving-card-description-text">Independent verification of network activity</p>
+                  <p class="solving-card-description-text" id="tech-transparency-c4-desc"></p>
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
@@ -1299,6 +1299,7 @@
           // ===========================
           setText('tech-smart-title', data.techSmartTitle);
           setText('tech-smart-desc', data.techSmartDesc);
+          setImg('smart-contract-automation-img',data.techSmartRightBgImage);
           if (data.techSmartCheckpoints && data.techSmartCheckpoints.length >= 3) {
             setText('tech-smart-check1', data.techSmartCheckpoints[0]);
             setText('tech-smart-check2', data.techSmartCheckpoints[1]);
@@ -1385,6 +1386,14 @@
           // ===========================
           setText('tech-transparency-title', data.techTransparencyTitle);
           setText('tech-transparency-desc', data.techTransparencyDesc);
+          setImg('tech-transparency-c1-img', data.techTransparencyCard1Icon);
+          setText('tech-transparency-c1-desc', data.techTransparencyCard1Desc);
+          setImg('tech-transparency-c2-img', data.techTransparencyCard2Icon);
+          setText('tech-transparency-c2-desc', data.techTransparencyCard2Desc);
+          setImg('tech-transparency-c3-img', data.techTransparencyCard3Icon);
+          setText('tech-transparency-c3-desc', data.techTransparencyCard3Desc);
+          setImg('tech-transparency-c4-img', data.techTransparencyCard4Icon);
+          setText('tech-transparency-c4-desc', data.techTransparencyCard4Desc);
 
           // ===========================
           // 11. COMPETITIVE ADVANTAGE
