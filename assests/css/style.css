@@ -3642,6 +3642,10 @@ figure {
     margin-left: -30px;
 }
 
+.primary-button-hover-text.navbar-button {
+    margin-left: 0;
+}
+
 .line {
     background-color: #fff;
     width: 100%;
@@ -3769,6 +3773,8 @@ figure {
     padding-top: 170px;
     padding-bottom: 270px;
 }
+
+
 
 .section.testimonial {
     border-top: 1px solid #ffffff14;
@@ -5213,6 +5219,11 @@ figure {
     text-align: center;
 }
 
+.section-title.core-features.hv2.tech-transparency-title {
+    max-width: 632px;
+    margin-bottom: 15px;
+}
+
 .section-title.core-features.hv2.p {
     font-size: 20px;
     line-height: 30px;
@@ -6631,10 +6642,12 @@ figure {
     font-weight: 400;
     line-height: 26px;
 }
+
 .contact-card-email {
     /* text-decoration: none; */
     color: #FFFFFF;
 }
+
 .core-features-hv2-card-image-wrapper {
     background-image: url("https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67f4b8da64b54a4d36a8a728_Core%20Features%20Hv2%20Card%20Image%20Bg.webp");
     background-position: 50%;
@@ -9107,6 +9120,8 @@ figure {
     font-size: 34px;
     font-weight: 500;
     line-height: 44px;
+
+    max-width: 290px;
 }
 
 .technology-card-description-text {
@@ -9661,6 +9676,14 @@ figure {
     display: inline-block;
 }
 
+.tech-slide-header {
+    max-width: 480px;
+}
+
+.tech-slide3-header {
+    max-width: 300px;
+}
+
 .history-star-wrap {
     justify-content: center;
     align-items: flex-end;
@@ -9703,6 +9726,10 @@ figure {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+}
+
+.tech-slide3-history-details {
+    max-width: 520px;
 }
 
 .tab-bottom-text-h2 {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html data-wf-domain="metaverse" data-wf-page="67d92c4842d210e660afb950" data-wf-site="67d5482886ed2b38b65e6d7c"
     data-wf-status="1" lang="en">
 
@@ -71,7 +71,7 @@
                                 <div class="primary-button-border-wrap">
                                     <div class="primary-button-wrap">
                                         <div class="primary-button-text">Get started</div>
-                                        <div class="primary-button-hover-text">Get started</div>
+                                        <div class="primary-button-hover-text navbar-button">Get started</div>
                                         <div class="primary-button-hover-bg"></div>
                                     </div>
                                 </div>
@@ -1076,6 +1076,7 @@
                                                             class="footer-subscribe-button w-button"
                                                             value="Subscribe" />
                                                     </div>
+                                                    <div id="footer-subscribe-status" style="margin-top: 10px; font-size: 14px; display: none; font-family: sans-serif; font-weight: 500;"></div>
                                                 </form>
                                             </div>
                                         </div>
@@ -1819,6 +1820,73 @@
                 console.warn('Backend server offline. Displaying static fallback content.', error);
             }
         })();
+    </script>
+    <script>
+        // Handle footer subscription form submission
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('footer-email-form');
+            if (form) {
+                form.addEventListener('submit', async function (e) {
+                    e.preventDefault();
+                    
+                    const emailInput = document.getElementById('footer-email');
+                    if (!emailInput) return;
+                    
+                    const email = emailInput.value.trim();
+                    if (!email) return;
+                    
+                    const submitBtn = form.querySelector('.footer-subscribe-button');
+                    const originalBtnValue = submitBtn ? submitBtn.value : 'Subscribe';
+                    
+                    if (submitBtn) {
+                        submitBtn.value = 'Subscribing...';
+                        submitBtn.disabled = true;
+                    }
+                    
+                    const statusEl = document.getElementById('footer-subscribe-status');
+                    if (statusEl) {
+                        statusEl.style.display = 'none';
+                        statusEl.textContent = '';
+                    }
+
+                    try {
+                        const response = await fetch('http://localhost:5000/api/subscribe', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ email: email })
+                        });
+                        
+                        const result = await response.json();
+                        
+                        if (statusEl) {
+                            statusEl.style.display = 'block';
+                            if (response.ok && result.success) {
+                                statusEl.style.color = '#00ffcc'; // Nice modern success cyan
+                                statusEl.textContent = result.message || 'Thank you for subscribing to our newsletter!';
+                                emailInput.value = '';
+                            } else {
+                                statusEl.style.color = '#ff6b6b'; // Nice modern error red
+                                statusEl.textContent = result.error || 'Failed to subscribe. Please try again.';
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Subscription error:', error);
+                        if (statusEl) {
+                            statusEl.style.display = 'block';
+                            statusEl.style.color = '#ff6b6b';
+                            statusEl.textContent = 'Unable to connect to server. Please try again later.';
+                        }
+                    } finally {
+                        if (submitBtn) {
+                            submitBtn.value = originalBtnValue;
+                            submitBtn.disabled = false;
+                        }
+                    }
+                });
+            }
+        });
     </script>
 </body>
 
