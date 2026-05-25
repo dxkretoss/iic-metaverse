@@ -5213,6 +5213,12 @@ figure {
     margin-right: auto;
 }
 
+.card-prices {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .section-title.core-features.hv2 {
     max-width: 856px;
     margin: 0 auto;
