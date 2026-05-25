@@ -54,8 +54,8 @@
             data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
             <div class="nav-container _1430">
                 <div class="navbar-container">
-                    <a href="/Home/" class="navbar-logo w-nav-brand"><img src="../assests/images/logo.svg" loading="lazy"
-                            alt="" class="navbar-logo-image" /></a>
+                    <a href="/Home/" class="navbar-logo w-nav-brand"><img src="../assests/images/logo.svg"
+                            loading="lazy" alt="" class="navbar-logo-image" /></a>
                     <nav role="navigation" class="nav-menu w-nav-menu">
                         <a href="/Home/" class="nav-menu-link w-nav-link">home</a>
                         <a href="/aboutus/" class="nav-menu-link w-nav-link">about</a>
@@ -66,7 +66,7 @@
                     <div class="navbar-button-wrapper">
 
                         <div class="primary-button-wrapper desktop">
-                            <a href="#" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
+                            <a href="/token-economy#how-works" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
                                 class="primary-button w-inline-block">
                                 <div class="primary-button-border-wrap">
                                     <div class="primary-button-wrap">
@@ -122,7 +122,8 @@
                                         </div>
                                         <div class="home-banner-button-wrapper">
                                             <div class="primary-button-wrapper desktop">
-                                                <a href="#" id="hero-primary-btn-link" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
+                                                <a href="#" id="hero-primary-btn-link"
+                                                    data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
                                                     class="primary-button w-inline-block">
                                                     <div class="primary-button-border-wrap">
                                                         <div class="primary-button-wrap">
@@ -165,7 +166,8 @@
                                             </div>
                                             <div class="banner-hv2-button-wrapper">
                                                 <div class="primary-button-wrapper">
-                                                    <a href="#" id="hero-secondary-btn-link" class="inner-button w-inline-block">
+                                                    <a href="#" id="hero-secondary-btn-link"
+                                                        class="inner-button w-inline-block">
                                                         <div class="primary-button-border-wrap">
                                                             <div class="inner-button-wrap">
                                                                 <div class="inner-button-text-wrap">
@@ -380,9 +382,9 @@
                                 </div>
                             </div>
                             <div class="core-features-hv2-card-image-wrapper">
-                                <img src="" loading="lazy" alt=""
-                                    class="core-features-hv2-card-img" id="feature-img-0" />
-                                </div>
+                                <img src="" loading="lazy" alt="" class="core-features-hv2-card-img"
+                                    id="feature-img-0" />
+                            </div>
                             <img src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e683c0ed0c6c685aed_CTA%20Top%20Left%20Element.svg"
                                 loading="lazy" alt="" class="cta-top-left-element" /><img
                                 src="https://cdn.prod.website-files.com/67d5482886ed2b38b65e6d7c/67d671e6111e29720527a042_CTA%20Top%20Right%20Element.svg"
@@ -821,8 +823,7 @@
                             </div>
                             <div class="banner-hv2-button-wrapper">
                                 <div class="primary-button-wrapper">
-                                    <a href="/contact/" class="inner-button w-inline-block"
-                                        id="cta-secondary-btn-link">
+                                    <a href="/contact/" class="inner-button w-inline-block" id="cta-secondary-btn-link">
                                         <div class="primary-button-border-wrap">
                                             <div class="inner-button-wrap">
                                                 <div class="inner-button-text-wrap">
@@ -1076,7 +1077,9 @@
                                                             class="footer-subscribe-button w-button"
                                                             value="Subscribe" />
                                                     </div>
-                                                    <div id="footer-subscribe-status" style="margin-top: 10px; font-size: 14px; display: none; font-family: sans-serif; font-weight: 500;"></div>
+                                                    <div id="footer-subscribe-status"
+                                                        style="margin-top: 10px; font-size: 14px; display: none; font-family: sans-serif; font-weight: 500;">
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
@@ -1828,21 +1831,21 @@
             if (form) {
                 form.addEventListener('submit', async function (e) {
                     e.preventDefault();
-                    
+
                     const emailInput = document.getElementById('footer-email');
                     if (!emailInput) return;
-                    
+
                     const email = emailInput.value.trim();
                     if (!email) return;
-                    
+
                     const submitBtn = form.querySelector('.footer-subscribe-button');
                     const originalBtnValue = submitBtn ? submitBtn.value : 'Subscribe';
-                    
+
                     if (submitBtn) {
                         submitBtn.value = 'Subscribing...';
                         submitBtn.disabled = true;
                     }
-                    
+
                     const statusEl = document.getElementById('footer-subscribe-status');
                     if (statusEl) {
                         statusEl.style.display = 'none';
@@ -1857,9 +1860,9 @@
                             },
                             body: JSON.stringify({ email: email })
                         });
-                        
+
                         const result = await response.json();
-                        
+
                         if (statusEl) {
                             statusEl.style.display = 'block';
                             if (response.ok && result.success) {

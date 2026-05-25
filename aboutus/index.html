@@ -53,7 +53,8 @@
           </nav>
           <div class="navbar-button-wrapper">
             <div class="primary-button-wrapper desktop">
-              <a href="#" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6" class="primary-button w-inline-block">
+              <a href="/token-economy#how-works" data-w-id="3af1c84f-ff74-c014-cb3b-40446b73b1f6"
+                class="primary-button w-inline-block">
                 <div class="primary-button-border-wrap">
                   <div class="primary-button-wrap">
                     <div class="primary-button-text">Get started</div>
@@ -275,7 +276,7 @@
         </div>
       </div>
     </section>
-   
+
 
     <section class="section community-spotlight">
       <div data-w-id="7436af0c-4104-52c0-12c7-24cd299651a4" class="community-spotlight-content">
@@ -284,12 +285,12 @@
             <img src="/assests/images/futureicon.svg" loading="lazy"
               style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.6, 0.6, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.6, 0.6, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.6, 0.6, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.6, 0.6, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
               alt="" class="community-spotlight-icon" />
-            </div>
+          </div>
           <div
             style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
             class="community-spotlight-title-description">
             <h2 class="community-spotlight-title" id="spotlight-title"></h2>
-            <p class="community-spotlight-description" id="spotlight-desc-wrap">              
+            <p class="community-spotlight-description" id="spotlight-desc-wrap">
             </p>
 
             <div class="aboutus-step-banner-button-wrapper">
@@ -336,7 +337,7 @@
                     <div class="primary-button-border-wrap">
                       <div class="inner-button-wrap">
                         <div class="inner-button-text-wrap">
-                          <div class="inner-button-text"  id="spotlight-secondary-btn-text"></div>
+                          <div class="inner-button-text" id="spotlight-secondary-btn-text"></div>
                           <div class="inner-button-hover-text" id="spotlight-secondary-btn-hover-text">
                           </div>
                         </div>
@@ -449,7 +450,9 @@
                               maxlength="256" name="email" data-name="Email" placeholder="Enter your email" type="email"
                               id="footer-email" required="" /><input type="submit" data-wait="Please wait..."
                               class="footer-subscribe-button w-button" value="Subscribe" /></div>
-                          <div id="footer-subscribe-status" style="margin-top: 10px; font-size: 14px; display: none; font-family: sans-serif; font-weight: 500;"></div>
+                          <div id="footer-subscribe-status"
+                            style="margin-top: 10px; font-size: 14px; display: none; font-family: sans-serif; font-weight: 500;">
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -897,71 +900,71 @@
     })();
   </script>
   <script>
-      // Handle footer subscription form submission
-      document.addEventListener('DOMContentLoaded', function () {
-          const form = document.getElementById('footer-email-form');
-          if (form) {
-              form.addEventListener('submit', async function (e) {
-                  e.preventDefault();
-                  
-                  const emailInput = document.getElementById('footer-email');
-                  if (!emailInput) return;
-                  
-                  const email = emailInput.value.trim();
-                  if (!email) return;
-                  
-                  const submitBtn = form.querySelector('.footer-subscribe-button');
-                  const originalBtnValue = submitBtn ? submitBtn.value : 'Subscribe';
-                  
-                  if (submitBtn) {
-                      submitBtn.value = 'Subscribing...';
-                      submitBtn.disabled = true;
-                  }
-                  
-                  const statusEl = document.getElementById('footer-subscribe-status');
-                  if (statusEl) {
-                      statusEl.style.display = 'none';
-                      statusEl.textContent = '';
-                  }
+    // Handle footer subscription form submission
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('footer-email-form');
+      if (form) {
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
 
-                  try {
-                      const response = await fetch('http://localhost:5000/api/subscribe', {
-                          method: 'POST',
-                          headers: {
-                              'Content-Type': 'application/json'
-                          },
-                          body: JSON.stringify({ email: email })
-                      });
-                      
-                      const result = await response.json();
-                      
-                      if (statusEl) {
-                          statusEl.style.display = 'block';
-                          if (response.ok && result.success) {
-                              statusEl.style.color = '#00ffcc'; // Nice modern success cyan
-                              statusEl.textContent = result.message || 'Thank you for subscribing to our newsletter!';
-                              emailInput.value = '';
-                          } else {
-                              statusEl.style.color = '#ff6b6b'; // Nice modern error red
-                              statusEl.textContent = result.error || 'Failed to subscribe. Please try again.';
-                          }
-                      }
-                  } catch (error) {
-                      console.error('Subscription error:', error);
-                      if (statusEl) {
-                          statusEl.style.display = 'block';
-                          statusEl.style.color = '#ff6b6b';
-                          statusEl.textContent = 'Unable to connect to server. Please try again later.';
-                      }
-                  } finally {
-                      if (submitBtn) {
-                          submitBtn.value = originalBtnValue;
-                          submitBtn.disabled = false;
-                      }
-                  }
-              });
+          const emailInput = document.getElementById('footer-email');
+          if (!emailInput) return;
+
+          const email = emailInput.value.trim();
+          if (!email) return;
+
+          const submitBtn = form.querySelector('.footer-subscribe-button');
+          const originalBtnValue = submitBtn ? submitBtn.value : 'Subscribe';
+
+          if (submitBtn) {
+            submitBtn.value = 'Subscribing...';
+            submitBtn.disabled = true;
           }
-      });
+
+          const statusEl = document.getElementById('footer-subscribe-status');
+          if (statusEl) {
+            statusEl.style.display = 'none';
+            statusEl.textContent = '';
+          }
+
+          try {
+            const response = await fetch('http://localhost:5000/api/subscribe', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ email: email })
+            });
+
+            const result = await response.json();
+
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              if (response.ok && result.success) {
+                statusEl.style.color = '#00ffcc'; // Nice modern success cyan
+                statusEl.textContent = result.message || 'Thank you for subscribing to our newsletter!';
+                emailInput.value = '';
+              } else {
+                statusEl.style.color = '#ff6b6b'; // Nice modern error red
+                statusEl.textContent = result.error || 'Failed to subscribe. Please try again.';
+              }
+            }
+          } catch (error) {
+            console.error('Subscription error:', error);
+            if (statusEl) {
+              statusEl.style.display = 'block';
+              statusEl.style.color = '#ff6b6b';
+              statusEl.textContent = 'Unable to connect to server. Please try again later.';
+            }
+          } finally {
+            if (submitBtn) {
+              submitBtn.value = originalBtnValue;
+              submitBtn.disabled = false;
+            }
+          }
+        });
+      }
+    });
   </script>
 </body>
 
