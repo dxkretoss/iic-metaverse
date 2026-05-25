@@ -24,6 +24,29 @@
                 opacity: 0;
             }
         }
+
+        /* Seamless Infinite Ticker Scroll Animation */
+        @keyframes marquee-scroll {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(calc(-100% - 20px), 0, 0);
+            }
+        }
+
+        .inner-ticker-wrapper {
+            animation: marquee-scroll 30s linear infinite !important;
+            display: flex !important;
+            flex-shrink: 0 !important;
+        }
+
+        .ticker {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            width: max-content !important;
+        }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
