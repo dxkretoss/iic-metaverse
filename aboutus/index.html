@@ -576,7 +576,7 @@
                 <div class="footer-line-dot"></div>
               </div>
               <div class="footer-inner-wrap">
-                <div class="footer-border-wrap v2">
+                <div class="footer-border-wrap v2" id="footer-socials-container">
                   <a data-w-id="bd83f162-c409-8767-023c-71d1c26e464e" href="https://www.facebook.com/" target="_blank"
                     class="footer-social-link w-inline-block">
                     <img loading="lazy" src="/assests/images/facebook.svg" alt="Footer Social Icon"
@@ -965,6 +965,40 @@
         });
       }
     });
+  </script>
+  <script>
+    // Dynamically load footer social links from Express/MongoDB server
+    (async function loadFooterSocials() {
+      const SOCIAL_API_URL = 'http://localhost:5000/api/socials';
+      const BACKEND_URL = 'http://localhost:5000';
+      const container = document.getElementById('footer-socials-container');
+      if (!container) return;
+      try {
+        const response = await fetch(SOCIAL_API_URL);
+        if (!response.ok) throw new Error('API server unreachable');
+        const result = await response.json();
+        if (result.success && result.data && result.data.length > 0) {
+          container.innerHTML = '';
+          result.data.forEach(link => {
+            if (!link.image) return;
+            const iconUrl = link.image.startsWith('http') ? link.image : (BACKEND_URL + link.image);
+            const a = document.createElement('a');
+            a.setAttribute('data-w-id', 'bd83f162-c409-8767-023c-71d1c26e464e');
+            a.href = link.link || '#';
+            a.target = '_blank';
+            a.className = 'footer-social-link w-inline-block';
+            a.innerHTML = `
+              <img loading="lazy" src="${iconUrl}" alt="${link.name}" class="footer-social-icon _01" />
+              <img loading="lazy" src="${iconUrl}" alt="${link.name}" class="footer-social-icon _02" />
+              <div class="footer-social-bg"></div>
+            `;
+            container.appendChild(a);
+          });
+        }
+      } catch (error) {
+        console.error('Failed to load footer socials:', error);
+      }
+    })();
   </script>
 </body>
 
